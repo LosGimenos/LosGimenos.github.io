@@ -1,6 +1,9 @@
-NAME
-3 goals for WDI
-PIC of your spirit animal
+#Technologies Used
+1. Html
+2. CSS
+
+#Technologies to Come
+1. JQuery
 
 # Lorenzo Hernandez
 ## Three Goals for this Class
