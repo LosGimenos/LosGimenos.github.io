@@ -1,3 +1,179 @@
-.container {
-    background-color: aquamarine;
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+body {
+    margin: 0;
+    padding:0;
+}
+
+header {
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://farm8.staticflickr.com/7400/28061983425_2ce5b4182e_c.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.chalchi {
+    background-image: url("http://canamay-te.de/site/wp-content/uploads/thirteen.png");
+    background-size: cover;
+    background-position: center;
+    float: right;
+    height: 145px;
+    width: 175px;
+    text-align: center;
+    margin-right: 25px;    
+}
+nav {
+    background-color: white;
+    height:115px;
+    padding-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    float: float;
+    color: dimgray;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.hero-text {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    color: white;
+    margin-left: 750px;
+    margin-top: 225px;
+}
+
+.wrapper {
+    background-color: #95a5a6;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+/*I'm terrible with the math on widths for accordian to work
+ex. but figure it out later for 1000px.
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+    margin:auto;
+	width: 1000px; height: 600px;
+	overflow: hidden;	
+}
+
+/*fix flickering?*/
+.accordian ul {
+	width: 2000px;
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 120px;
+    height: 600px;
+	float: left;
+	border-left: 1px solid #888;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.accordian ul:hover li {width: 30px;}
+.accordian ul li:hover {width: 640px; height: 100%;}
+
+
+.accordian li img {
+	display: block;
+    height: 600px;
+}
+
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+    width: 100px;	
+}
+
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+}
+
+/* Ya cavo esa cochinada */
+
+.about_blah {
+    height: 60vh;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.action_text {
+    display: inline-block;
+    background-color: #fff;
+    height: 100%;
+    width:25%;
+    text-align: center;
+    margin-left:25%;
+    padding: 0 1%;
+}
+
+.contact_text {
+    display:inline-block;
+    background-color: #fff;
+    height: 100%;
+    width:25%;
+    text-align: center;
+    padding: 0 1%;
+    margin: auto;
+}
+
+.contact_text a {
+    text-decoration: none;
+}
+
+.contact_text a:hover {
+    text-decoration: underline;
+}
+
+.shrink {
+    font-size: 90%;
+}
+
+footer {
+    background-color: #34495e;
+    height: 200px;
+}
+
+.footer_text {
+    position: absolute;
+    height: 35px;
+    margin-top:12%;
+    margin-left: 40%;
+    text-align: center;
 }
