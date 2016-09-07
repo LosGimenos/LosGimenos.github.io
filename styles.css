@@ -10,6 +10,12 @@
 body {
     margin: 0;
     padding:0;
+    background-color: black;
+}
+
+h2, h3 {
+  color: #fff;
+  text-decoration: underline;
 }
 
 header {
@@ -28,7 +34,7 @@ header {
     height: 145px;
     width: 175px;
     text-align: center;
-    margin-right: 25px;    
+    margin-right: 25px;
 }
 nav {
     background-color: white;
@@ -50,9 +56,12 @@ nav a:hover {
     text-decoration-color: white;
 }
 
+div {
+  font-family: 'Raleway', sans-serif;
+}
+
 .hero-text {
     position: absolute;
-    font-family: 'Raleway', sans-serif;
     font-size: 35px;
     color: white;
     margin-left: 750px;
@@ -63,7 +72,40 @@ nav a:hover {
     background-color: #95a5a6;
     height: 100vh;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 1%;
+}
+
+.web-dev {
+  background-color: grey;
+    height: 100vh;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.proj-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  color: #fff;
+}
+
+.proj-img {
+  position: relative;
+  display: inline-block;
+  height: 20%;
+  width: 300px;
+  background-image: url('https://github.com/LosGimenos/dumpthechump/blob/gh-pages/img/screens/Screen%20Shot%202016-09-05%20at%209.26.39%20PM.png?raw=true');
+  background-size: cover;
+  background-position: center;
+}
+
+.proj-text: {
+  postion: relative;
+  text-align: center;
+  height: 40%;
+  width: 10%;
+  padding-left: 10%;
 }
 
 
@@ -78,9 +120,9 @@ default width = 800/5 = 160px;
 */
 
 .accordian {
-    margin:auto;
+  margin:auto;
 	width: 1000px; height: 600px;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 /*fix flickering?*/
@@ -112,8 +154,8 @@ default width = 800/5 = 160px;
 .image_title {
 	background: rgba(0, 0, 0, 0.5);
 	position: absolute;
-	left: 0; bottom: 0;	
-    width: 100px;	
+	left: 0; bottom: 0;
+    width: 100px;
 }
 
 .image_title a {
@@ -127,30 +169,32 @@ default width = 800/5 = 160px;
 /* Ya cavo esa cochinada */
 
 .about_blah {
+    position: relative;
     height: 60vh;
     background-color: grey;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .action_text {
-    display: inline-block;
+    position: absolute;
     background-color: #fff;
     height: 100%;
     width:25%;
     text-align: center;
-    margin-left:25%;
     padding: 0 1%;
+    left: 20%;
 }
 
 .contact_text {
-    display:inline-block;
+    position: absolute;
     background-color: #fff;
     height: 100%;
     width:25%;
     text-align: center;
     padding: 0 1%;
-    margin: auto;
+    left: 55%;
 }
 
 .contact_text a {
@@ -176,4 +220,39 @@ footer {
     margin-top:12%;
     margin-left: 40%;
     text-align: center;
+}
+
+@media (max-width: 650px) {
+  .about_blah {
+    display: none;
+  }
+  .action_text {
+    position: absolute;
+    background-color: #fff;
+    height: 10%;
+    width:25%;
+    text-align: center;
+    padding: 0 1%;
+    left: 20%;
+}
+
+.contact_text {
+    position: absolute;
+    background-color: #fff;
+    height: 10%;
+    width:25%;
+    text-align: center;
+    padding: 0 1%;
+    left: 55%;
+}
+}
+
+@media (min-width: 700px) {
+  .about_blah {
+    height: 80vh;
+}
+.proj-img {
+  height: 40%;
+  width: 40%;
+}
 }
