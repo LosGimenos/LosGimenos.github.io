@@ -168,7 +168,27 @@ default width = 800/5 = 160px;
 
 /* Ya cavo esa cochinada */
 
+.mobile_about_blah {
+  background-color: grey;
+  text-align: center;
+}
+.mobile_action_text,
+.mobile_contact_text {
+  padding: 2%;
+}
+
+.mobile_action_text {
+  background-color: white;
+}
+
+.mobile_contact_text {
+  position: relative;
+  margin-top: 10%;
+  background-color: white;
+}
+
 .about_blah {
+    display: none;
     position: relative;
     height: 60vh;
     background-color: grey;
@@ -222,9 +242,24 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 650px) {
-  .about_blah {
+
+/*  */
+/*MEDIA QUERIES  */
+/*  */
+
+@media (max-width: 800px) {
+.proj-img {
+  height: 40%;
+  width: 40%;
+}
+}
+
+/*@media (min-width: 801px) {
+  .mobile_about_blah {
     display: none;
+  }
+  .about_blah {
+    display: all;
   }
   .action_text {
     position: absolute;
@@ -245,14 +280,5 @@ footer {
     padding: 0 1%;
     left: 55%;
 }
-}
+}*/
 
-@media (min-width: 700px) {
-  .about_blah {
-    height: 80vh;
-}
-.proj-img {
-  height: 40%;
-  width: 40%;
-}
-}
