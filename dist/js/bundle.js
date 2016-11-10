@@ -21453,6 +21453,10 @@
 	
 	var _heroPage2 = _interopRequireDefault(_heroPage);
 	
+	var _about = __webpack_require__(232);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Routes = function Routes() {
@@ -21462,7 +21466,8 @@
 	    _react2.default.createElement(
 	      _reactRouter.Route,
 	      { path: '/', component: _app2.default },
-	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _heroPage2.default })
+	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _heroPage2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default })
 	    )
 	  );
 	};
@@ -26431,7 +26436,6 @@
 	        _react2.default.createElement(
 	          'div',
 	          { id: 'main-content' },
-	          'Test!',
 	          this.props.children
 	        ),
 	        _react2.default.createElement(_footer2.default, null)
@@ -26481,7 +26485,7 @@
 /* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26491,34 +26495,36 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(173);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var NavBar = function NavBar() {
 	  return _react2.default.createElement(
-	    "div",
-	    { id: "nav-bar" },
+	    'div',
+	    { id: 'nav-bar' },
 	    _react2.default.createElement(
-	      "a",
-	      { href: "#" },
-	      "Things"
+	      _reactRouter.Link,
+	      { to: 'about' },
+	      'About'
 	    ),
 	    _react2.default.createElement(
-	      "a",
-	      { href: "#" },
-	      "Stuff"
+	      'a',
+	      { href: '#' },
+	      'Stuff'
 	    ),
 	    _react2.default.createElement(
-	      "a",
-	      { href: "#" },
-	      "Whatevs"
+	      'a',
+	      { href: '#' },
+	      'Whatevs'
 	    ),
 	    _react2.default.createElement(
-	      "div",
-	      { className: "chalchi" },
+	      'div',
+	      { className: 'chalchi' },
 	      _react2.default.createElement(
-	        "h3",
+	        'h3',
 	        null,
-	        "Lorenzo Sari\xF1ana"
+	        'Lorenzo Sari\xF1ana'
 	      )
 	    )
 	  );
@@ -26559,6 +26565,151 @@
 	};
 	
 	exports.default = HeroPage;
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var About = function (_Component) {
+	  _inherits(About, _Component);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
+	
+	  _createClass(About, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { id: "about" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-top" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-top-h1" },
+	            _react2.default.createElement(
+	              "h1",
+	              null,
+	              "Creator",
+	              _react2.default.createElement("br", null),
+	              "Collaborator",
+	              _react2.default.createElement("br", null),
+	              "Devisor"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-top-right-h1 clearfix" },
+	            _react2.default.createElement(
+	              "h1",
+	              null,
+	              "Find me here."
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("hr", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-bottom" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-bottom-cred" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "I build stories and I tell stories. Specializes in devised work and creating immersive theatrical worlds. Experienced with lighting design, sound design, and scoring."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Full Stack web developer proficient with HTML, CSS, JS, Node, React and RUBY. Other software proficiences include: Final Cut Pro, Protools, Photoshop, Illustrator, Isadora, QLab and Publisher."
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-bottom-info" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "email:",
+	              _react2.default.createElement("br", null),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "mailto:enzosarin@gmail.com" },
+	                "enzosarin at gmail.com"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "github:",
+	              _react2.default.createElement("br", null),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://github.com/LosGimenos", target: "_blank" },
+	                "@LosGimenos"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "linkedin:",
+	              _react2.default.createElement("br", null),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://www.linkedin.com/in/lorenzosarinana", target: "_blank" },
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "shrink" },
+	                  "@lorenzosarinana"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "instagram:",
+	              _react2.default.createElement("br", null),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://www.instagram.com/spasticyomi/", target: "_blank" },
+	                "@spasticyomi"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return About;
+	}(_react.Component);
+	
+	exports.default = About;
 
 /***/ }
 /******/ ]);

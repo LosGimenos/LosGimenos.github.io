@@ -78,6 +78,49 @@ div {
     margin-top: 225px;
 }
 
+div.about-top,
+div.about-bottom {
+  color: white;
+  width: 100%;
+}
+
+div.about-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.about-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.about-bottom-cred {
+  flex-basis: 25%;
+}
+
+div.about-bottom a {
+    text-decoration: none;
+    color: #6C7A89;
+}
+
+div.about-bottom a:hover {
+    text-decoration: underline;
+}
+
+div.shrink {
+    font-size: 90%;
+}
+
+/*div.about-top-h1 {
+  display: inline-block;
+  float: left;
+}
+
+div.about-top-h1 {
+
+}*/
+
 .wrapper {
     background-color: #95a5a6;
     height: 100vh;
@@ -225,18 +268,6 @@ default width = 800/5 = 160px;
     text-align: center;
     padding: 0 1%;
     left: 55%;
-}
-
-.contact_text a {
-    text-decoration: none;
-}
-
-.contact_text a:hover {
-    text-decoration: underline;
-}
-
-.shrink {
-    font-size: 90%;
 }
 
 #footer {
