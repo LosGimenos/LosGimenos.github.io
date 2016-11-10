@@ -18,9 +18,9 @@ h2, h3 {
   text-decoration: underline;
 }
 
-header {
+#header {
     margin: 0;
-    height: 100vh;
+    height: 80vh;
     background-image: url("https://farm8.staticflickr.com/7400/28061983425_2ce5b4182e_c.jpg");
     background-position: center;
     background-size: cover;
@@ -31,24 +31,28 @@ header {
     background-size: cover;
     background-position: center;
     float: right;
-    height: 145px;
     width: 175px;
+    height: 100%;
     text-align: center;
     margin-right: 25px;
+    margin-top: 0;
 }
 
 .chalchi h3 {
+  margin-top: 0;
   color: black;
   text-decoration: none;
 }
 
-nav {
+#nav-bar {
+    position: relative;
+    top: 0;
     background-color: white;
-    height:115px;
-    padding-top: 20px;
+    height: 95px;
+    padding-top: 1%;
 }
 
-nav a {
+#nav-bar a {
     text-decoration: none;
     float: float;
     color: dimgray;
@@ -57,7 +61,7 @@ nav a {
     font-size: 20px;
 }
 
-nav a:hover {
+#nav-bar a:hover {
     text-decoration: underline;
     text-decoration-color: white;
 }
@@ -66,7 +70,7 @@ div {
   font-family: 'Raleway', sans-serif;
 }
 
-.hero-text {
+#hero-text {
     position: absolute;
     font-size: 35px;
     color: white;
@@ -127,25 +131,25 @@ default width = 800/5 = 160px;
 
 .accordian {
   margin:auto;
-	width: 1000px; height: 600px;
-	overflow: hidden;
+  width: 1000px; height: 600px;
+  overflow: hidden;
 }
 
 /*fix flickering?*/
 .accordian ul {
-	width: 2000px;
+  width: 2000px;
 }
 
 .accordian li {
-	position: relative;
-	display: block;
-	width: 120px;
+  position: relative;
+  display: block;
+  width: 120px;
     height: 600px;
-	float: left;
-	border-left: 1px solid #888;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+  float: left;
+  border-left: 1px solid #888;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
 }
 
 .accordian ul:hover li {width: 30px;}
@@ -153,23 +157,23 @@ default width = 800/5 = 160px;
 
 
 .accordian li img {
-	display: block;
+  display: block;
     height: 600px;
 }
 
 .image_title {
-	background: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	left: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0; bottom: 0;
     width: 100px;
 }
 
 .image_title a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	padding: 20px;
-	font-size: 16px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
 }
 
 /* Ya cavo esa cochinada */
@@ -235,9 +239,13 @@ default width = 800/5 = 160px;
     font-size: 90%;
 }
 
-footer {
+#footer {
+    position: absolute;
+    bottom: 0;
     background-color: #34495e;
-    height: 200px;
+    text-align: center;
+    height: 5%;
+    width: 100%;
 }
 
 .footer_text {
