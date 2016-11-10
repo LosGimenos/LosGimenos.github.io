@@ -21457,6 +21457,10 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
+	var _theatrical = __webpack_require__(233);
+	
+	var _theatrical2 = _interopRequireDefault(_theatrical);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Routes = function Routes() {
@@ -21467,7 +21471,8 @@
 	      _reactRouter.Route,
 	      { path: '/', component: _app2.default },
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _heroPage2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default })
+	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'theatrical', component: _theatrical2.default })
 	    )
 	  );
 	};
@@ -26511,12 +26516,12 @@
 	    _react2.default.createElement(
 	      'a',
 	      { href: '#' },
-	      'Stuff'
+	      'Web'
 	    ),
 	    _react2.default.createElement(
-	      'a',
-	      { href: '#' },
-	      'Whatevs'
+	      _reactRouter.Link,
+	      { to: 'theatrical' },
+	      'Theatrical'
 	    ),
 	    _react2.default.createElement(
 	      'div',
@@ -26576,6 +26581,128 @@
 	  value: true
 	});
 	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = function About() {
+	  return _react2.default.createElement(
+	    "div",
+	    { id: "about" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "about-top" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "about-top-h1" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Creator",
+	          _react2.default.createElement("br", null),
+	          "Collaborator",
+	          _react2.default.createElement("br", null),
+	          "Devisor"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "about-top-right-h1 clearfix" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Find me here."
+	        )
+	      )
+	    ),
+	    _react2.default.createElement("hr", null),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "about-bottom" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "about-bottom-cred" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I build stories and I tell stories. Specializes in devised work and creating immersive theatrical worlds. Experienced with lighting design, sound design, and scoring."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Full Stack web developer proficient with HTML, CSS, JS, Node, React and RUBY. Other software proficiences include: Final Cut Pro, Protools, Photoshop, Illustrator, Isadora, QLab and Publisher."
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "about-bottom-info" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "email:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "mailto:enzosarin@gmail.com" },
+	            "enzosarin at gmail.com"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "github:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/LosGimenos", target: "_blank" },
+	            "@LosGimenos"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "linkedin:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://www.linkedin.com/in/lorenzosarinana", target: "_blank" },
+	            _react2.default.createElement(
+	              "span",
+	              { className: "shrink" },
+	              "@lorenzosarinana"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "instagram:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://www.instagram.com/spasticyomi/", target: "_blank" },
+	            "@spasticyomi"
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = About;
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(1);
@@ -26590,114 +26717,163 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var About = function (_Component) {
-	  _inherits(About, _Component);
+	var Theatrical = function (_Component) {
+	  _inherits(Theatrical, _Component);
 	
-	  function About() {
-	    _classCallCheck(this, About);
+	  function Theatrical() {
+	    _classCallCheck(this, Theatrical);
 	
-	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Theatrical.__proto__ || Object.getPrototypeOf(Theatrical)).call(this));
+	
+	    _this.state = {};
+	    return _this;
 	  }
 	
-	  _createClass(About, [{
+	  _createClass(Theatrical, [{
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { id: "about" },
+	        null,
 	        _react2.default.createElement(
 	          "div",
-	          { className: "about-top" },
+	          { id: "theatrical-title" },
 	          _react2.default.createElement(
-	            "div",
-	            { className: "about-top-h1" },
-	            _react2.default.createElement(
-	              "h1",
-	              null,
-	              "Creator",
-	              _react2.default.createElement("br", null),
-	              "Collaborator",
-	              _react2.default.createElement("br", null),
-	              "Devisor"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-top-right-h1 clearfix" },
-	            _react2.default.createElement(
-	              "h1",
-	              null,
-	              "Find me here."
-	            )
+	            "h3",
+	            null,
+	            "Direction.Performance.Design"
 	          )
 	        ),
-	        _react2.default.createElement("hr", null),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "about-bottom" },
+	          { className: "accordian" },
 	          _react2.default.createElement(
-	            "div",
-	            { className: "about-bottom-cred" },
+	            "ul",
+	            null,
 	            _react2.default.createElement(
-	              "p",
+	              "li",
 	              null,
-	              "I build stories and I tell stories. Specializes in devised work and creating immersive theatrical worlds. Experienced with lighting design, sound design, and scoring."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Full Stack web developer proficient with HTML, CSS, JS, Node, React and RUBY. Other software proficiences include: Final Cut Pro, Protools, Photoshop, Illustrator, Isadora, QLab and Publisher."
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-bottom-info" },
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "email:",
-	              _react2.default.createElement("br", null),
 	              _react2.default.createElement(
-	                "a",
-	                { href: "mailto:enzosarin@gmail.com" },
-	                "enzosarin at gmail.com"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "github:",
-	              _react2.default.createElement("br", null),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "https://github.com/LosGimenos", target: "_blank" },
-	                "@LosGimenos"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "linkedin:",
-	              _react2.default.createElement("br", null),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "https://www.linkedin.com/in/lorenzosarinana", target: "_blank" },
+	                "div",
+	                { className: "image_title" },
 	                _react2.default.createElement(
-	                  "span",
-	                  { className: "shrink" },
-	                  "@lorenzosarinana"
+	                  "a",
+	                  { href: "#" },
+	                  "el simio"
 	                )
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://lida.org/the-hairy-ape/", target: "_blank" },
+	                _react2.default.createElement("img", { src: "../images/el_simio.jpg" })
 	              )
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              "li",
 	              null,
-	              "instagram:",
-	              _react2.default.createElement("br", null),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "image_title" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "add it up"
+	                )
+	              ),
 	              _react2.default.createElement(
 	                "a",
-	                { href: "https://www.instagram.com/spasticyomi/", target: "_blank" },
-	                "@spasticyomi"
+	                { href: "http://lida.org/add-it-up/", target: "_blank" },
+	                _react2.default.createElement("img", { src: "../images/add.jpg" })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement(
+	                "div",
+	                { className: "image_title" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "mouse in a jar"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://lida.org/mouse-in-a-jar/", target: "_blank" },
+	                _react2.default.createElement("img", { src: "../images/mouse.jpg" })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement(
+	                "div",
+	                { className: "image_title" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "rur/lol"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://lida.org/r-u-r-lol/", target: "_blank" },
+	                _react2.default.createElement("img", { src: "../images/rur_lol.jpg" })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement(
+	                "div",
+	                { className: "image_title" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "rain/ of terror"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://lida.org/rain-of-terror/", target: "_blank" },
+	                _react2.default.createElement("img", { src: "../images/rain_sunglasses.jpg" })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement(
+	                "div",
+	                { className: "image_title" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "http://lida.org/hot-wax-to-being-to-big-to-fail/", target: "_blank" },
+	                  "hot + wax"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "#" },
+	                _react2.default.createElement("img", { src: "../images/hot_wax.jpg" })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement(
+	                "div",
+	                { className: "image_title" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "ghostcard"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://ghostcardshow.com/", target: "_blank" },
+	                _react2.default.createElement("img", { src: "../images/ghost_card.jpg" })
 	              )
 	            )
 	          )
@@ -26706,10 +26882,10 @@
 	    }
 	  }]);
 	
-	  return About;
+	  return Theatrical;
 	}(_react.Component);
 	
-	exports.default = About;
+	exports.default = Theatrical;
 
 /***/ }
 /******/ ]);

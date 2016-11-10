@@ -18,6 +18,10 @@ h2, h3 {
   text-decoration: underline;
 }
 
+div {
+  font-family: 'Raleway', sans-serif;
+}
+
 #header {
     margin: 0;
     height: 80vh;
@@ -66,10 +70,6 @@ h2, h3 {
     text-decoration-color: white;
 }
 
-div {
-  font-family: 'Raleway', sans-serif;
-}
-
 #hero-text {
     position: absolute;
     font-size: 35px;
@@ -112,15 +112,6 @@ div.shrink {
     font-size: 90%;
 }
 
-/*div.about-top-h1 {
-  display: inline-block;
-  float: left;
-}
-
-div.about-top-h1 {
-
-}*/
-
 .wrapper {
     background-color: #95a5a6;
     height: 100vh;
@@ -161,6 +152,9 @@ div.about-top-h1 {
   padding-left: 10%;
 }
 
+div#theatrical-title {
+  text-align: center;
+}
 
 /*I'm terrible with the math on widths for accordian to work
 ex. but figure it out later for 1000px.
@@ -174,7 +168,7 @@ default width = 800/5 = 160px;
 
 .accordian {
   margin:auto;
-  width: 1000px; height: 600px;
+  width: 1000px; height: 550px;
   overflow: hidden;
 }
 
@@ -187,7 +181,7 @@ default width = 800/5 = 160px;
   position: relative;
   display: block;
   width: 120px;
-    height: 600px;
+  height: 100%;
   float: left;
   border-left: 1px solid #888;
   transition: all 0.5s;
@@ -201,14 +195,14 @@ default width = 800/5 = 160px;
 
 .accordian li img {
   display: block;
-    height: 600px;
+  height: 100%;
 }
 
 .image_title {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  left: 0; bottom: 0;
-    width: 100px;
+  left: 0; bottom: 15%;
+  width: 100px;
 }
 
 .image_title a {
