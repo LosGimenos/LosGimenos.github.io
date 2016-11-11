@@ -188,7 +188,7 @@ default width = 800/5 = 160px;
 
 .accordian {
   margin:auto;
-  width: 1000px; height: 550px;
+  width: 100%; height: 70vh;
   overflow: hidden;
 }
 
@@ -200,7 +200,7 @@ default width = 800/5 = 160px;
 .accordian li {
   position: relative;
   display: block;
-  width: 120px;
+  width: 100px;
   height: 100%;
   float: left;
   border-left: 1px solid #888;
@@ -209,13 +209,14 @@ default width = 800/5 = 160px;
   -moz-transition: all 0.5s;
 }
 
-.accordian ul:hover li {width: 30px;}
-.accordian ul li:hover {width: 640px; height: 100%;}
+.accordian ul:hover li {width: 4em;}
+.accordian ul li:hover {width: 14em; height: 100%;}
 
 
 .accordian li img {
   display: block;
-  height: 100%;
+  width: 14em;
+  height: 19em;
 }
 
 .image_title {
@@ -234,11 +235,6 @@ default width = 800/5 = 160px;
 }
 
 /* Ya cavo esa cochinada */
-
-div#img-simio {
-  height: 600px;
-  background-image: url('../images/el_simio.jpg'),
-}
 
 #footer {
     position: absolute;
