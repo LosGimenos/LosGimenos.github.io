@@ -1,0 +1,59 @@
+import React, { Componet } from 'react';
+import WebProjectItem from './webProjectItem.jsx';
+
+export default class WebProjectList extends Component {
+  constructor() {
+    super();
+    this.state = {
+      [
+        {
+          name: 'Dump the Chump',
+          description: 'Users click on body parts and tap keys to provide the parts with ultra-fresh dance moves.',
+          tech: 'JavaScript, CSS, HTML',
+          url: `https://losgimenos.github.io/dumpthechump/`,
+          imgSrc: `https://github.com/LosGimenos/dumpthechump/blob/gh-pages/img/screens/Screen%20Shot%202016-09-05%20at%209.26.39%20PM.png?raw=true`,
+        },
+        {
+          name: 'Flea',
+          description: 'Single-page listing app built with React.',
+          tech: 'React, Node, Firebase, Webpack, Babel, and CSS',
+          url: `https://github.com/LosGimenos/Flea/`,
+          imgSrc: `https://github.com/LosGimenos/Flea/raw/master/img/Screen%20Shot%202016-09-26%20at%209.22.36%20PM.png?raw=true`,
+        },
+        {
+          name: 'Tell Me Where to Go',
+          description: 'A restaurant-roulette game designed to help find a restaurant.',
+          tech: 'React, Postgresql, Node, CSS',
+          url: `https://tell-me-where-to-go.herokuapp.com/`,
+          imgSrc: ``,
+        },
+        {
+          name: 'PaFuera',
+          description: 'NYC events blog aggregator.',
+          tech: 'React, Postgresql, Node, Cheerio, CSS',
+          url: `https://pafuera.herokuapp.com/`,
+          imgSrc: ``,
+        },
+      ],
+    };
+  }
+  render() {
+    const webProjects = this.state.map((project) => {
+      return (
+        <div>
+          <WebProjectItem
+            name={project.name}
+            description={project.description}
+            tech={project.url}
+            imgSrc={project.imgSrc}
+          />
+        </div>
+      );
+    })
+    return (
+      <div id="web-project-list">
+        {webProjects}
+      </div>
+    );
+  }
+}
