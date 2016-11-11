@@ -236,6 +236,34 @@ default width = 800/5 = 160px;
 
 /* Ya cavo esa cochinada */
 
+#web-project-list {
+  position: relative;
+  left: 6%;
+  width: 90%;
+}
+
+.web-project-item {
+  color: white;
+  width: 25em;
+  height: 15em;
+  text-align: center;
+  font-size: 80%;
+  float: left;
+  margin: 1% 0 1% 5%;
+  border: solid 1px white;
+}
+
+.web-project-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.web-project-img {
+  width: 25%;
+  height: 25%;
+  margin: auto;
+}
+
 #footer {
     position: absolute;
     bottom: 0;
@@ -304,44 +332,4 @@ default width = 800/5 = 160px;
     margin-left: 40%;
     text-align: center;
 }
-
-
-/*  */
-/*MEDIA QUERIES  */
-/*  */
-
-@media (max-width: 800px) {
-.proj-img {
-  height: 40%;
-  width: 40%;
-}
-}
-
-/*@media (min-width: 801px) {
-  .mobile_about_blah {
-    display: none;
-  }
-  .about_blah {
-    display: all;
-  }
-  .action_text {
-    position: absolute;
-    background-color: #fff;
-    height: 10%;
-    width:25%;
-    text-align: center;
-    padding: 0 1%;
-    left: 20%;
-}
-
-.contact_text {
-    position: absolute;
-    background-color: #fff;
-    height: 10%;
-    width:25%;
-    text-align: center;
-    padding: 0 1%;
-    left: 55%;
-}
-}*/
 

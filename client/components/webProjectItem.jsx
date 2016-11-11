@@ -1,6 +1,6 @@
 import React from 'react';
 
-const proptypes = {
+const propTypes = {
   name: React.PropTypes.string,
   tech: React.PropTypes.string,
   description: React.PropTypes.string,
@@ -11,11 +11,11 @@ const proptypes = {
 const WebProjectItem = ({ name, tech, description, url, imgSrc }) => {
   return (
     <div>
-      <a href={url}>
+      <a href={url} target="_blank">
         <h3>{name}</h3>
         <img src={imgSrc} className="web-project-img" />
-        <hr />
         <p>{description}</p>
+        <p>TECH: {tech}</p>
       </a>
     </div>
   );
