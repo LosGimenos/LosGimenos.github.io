@@ -54,7 +54,7 @@ div {
   float: left;
   margin-left: 2%;
   margin-top: .5%;
-  font-size: 75%;
+  /*font-size: 75%;*/
 }
 
 #nav-bar a {
@@ -86,13 +86,13 @@ div {
   text-decoration: none;
   top: 3%;
   margin: 0;
-  font-size: 75%;
+  font-size: 90%;
 }
 
 #hero-text {
     position: absolute;
     color: white;
-    font-size: 150%;
+    font-size: 200%;
     margin-left: 60%;
     margin-top: 20%;
 }
@@ -101,7 +101,6 @@ div.about-top,
 div.about-bottom {
   color: white;
   width: 100%;
-  font-size: 90%;
 }
 
 div.about-top {
@@ -132,52 +131,11 @@ div.shrink {
     font-size: 90%;
 }
 
-.wrapper {
-    background-color: #95a5a6;
-    height: 100vh;
-    text-align: center;
-    padding-top: 1%;
-}
-
-.web-dev {
-  background-color: grey;
-    height: 100vh;
-    text-align: center;
-    padding-top: 1%;
-}
-
-.proj-item {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding-top: 5%;
-  color: #fff;
-}
-
-.proj-img {
-  position: relative;
-  display: inline-block;
-  height: 20%;
-  width: 300px;
-  background-image: url('https://github.com/LosGimenos/dumpthechump/blob/gh-pages/img/screens/Screen%20Shot%202016-09-05%20at%209.26.39%20PM.png?raw=true');
-  background-size: cover;
-  background-position: center;
-}
-
-.proj-text: {
-  postion: relative;
-  text-align: center;
-  height: 40%;
-  width: 10%;
-  padding-left: 10%;
-}
-
 div#theatrical-title {
   text-align: center;
 }
 
-/*I'm terrible with the math on widths for accordian to work
-ex. but figure it out later for 1000px.
+/*
 Width of image = 640px
 total images = 5
 so width of hovered image = 640px
@@ -187,8 +145,8 @@ default width = 800/5 = 160px;
 */
 
 .accordian {
-  margin:auto;
-  width: 100%; height: 70vh;
+  margin-top: 5%;
+  width: 100%; height: 84vh;
   overflow: hidden;
 }
 
@@ -200,7 +158,7 @@ default width = 800/5 = 160px;
 .accordian li {
   position: relative;
   display: block;
-  width: 100px;
+  width: 9em;
   height: 100%;
   float: left;
   border-left: 1px solid #888;
@@ -209,20 +167,20 @@ default width = 800/5 = 160px;
   -moz-transition: all 0.5s;
 }
 
-.accordian ul:hover li {width: 4em;}
-.accordian ul li:hover {width: 14em; height: 100%;}
+.accordian ul:hover li {width: 10em;}
+.accordian ul li:hover {width: 25em; height: 100%;}
 
 
 .accordian li img {
   display: block;
-  width: 14em;
-  height: 19em;
+  width: 25em;
+  height: 25em;
 }
 
 .image_title {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  left: 0; bottom: 15%;
+  left: 0; bottom: 5%;
   width: 100px;
 }
 
@@ -238,8 +196,9 @@ default width = 800/5 = 160px;
 
 #web-project-list {
   position: relative;
-  left: 6%;
-  width: 90%;
+  left: 14%;
+  margin-top: 5%;
+  width: 85%;
 }
 
 .web-project-item {
@@ -247,7 +206,6 @@ default width = 800/5 = 160px;
   width: 25em;
   height: 15em;
   text-align: center;
-  font-size: 80%;
   float: left;
   margin: 1% 0 1% 5%;
   border: solid 1px white;
@@ -271,65 +229,6 @@ default width = 800/5 = 160px;
     text-align: center;
     height: 4%;
     width: 100%;
-    font-size: 45%;
-}
-
-.mobile_about_blah {
-  background-color: grey;
-  text-align: center;
-}
-.mobile_action_text,
-.mobile_contact_text {
-  padding: 2%;
-}
-
-.mobile_action_text {
-  background-color: white;
-}
-
-.mobile_contact_text {
-  position: relative;
-  margin-top: 10%;
-  background-color: white;
-}
-
-.about_blah {
-    display: none;
-    position: relative;
-    height: 60vh;
-    background-color: grey;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.action_text {
-    position: absolute;
-    background-color: #fff;
-    height: 100%;
-    width:25%;
-    text-align: center;
-    padding: 0 1%;
-    left: 20%;
-}
-
-.contact_text {
-    position: absolute;
-    background-color: #fff;
-    height: 100%;
-    width:25%;
-    text-align: center;
-    padding: 0 1%;
-    left: 55%;
-}
-
-
-
-.footer_text {
-    position: absolute;
-    height: 35px;
-    margin-top:12%;
-    margin-left: 40%;
-    text-align: center;
+    font-size: 85%;
 }
 
