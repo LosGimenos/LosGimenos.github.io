@@ -21461,6 +21461,10 @@
 	
 	var _theatrical2 = _interopRequireDefault(_theatrical);
 	
+	var _webProjectList = __webpack_require__(234);
+	
+	var _webProjectList2 = _interopRequireDefault(_webProjectList);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Routes = function Routes() {
@@ -21472,7 +21476,8 @@
 	      { path: '/', component: _app2.default },
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _heroPage2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'theatrical', component: _theatrical2.default })
+	      _react2.default.createElement(_reactRouter.Route, { path: 'theatrical', component: _theatrical2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'web-development', component: _webProjectList2.default })
 	    )
 	  );
 	};
@@ -26509,27 +26514,59 @@
 	    'div',
 	    { id: 'nav-bar' },
 	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: 'about' },
-	      'About'
-	    ),
-	    _react2.default.createElement(
-	      'a',
-	      { href: '#' },
-	      'Web'
-	    ),
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: 'theatrical' },
-	      'Theatrical'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'chalchi' },
+	      'ul',
+	      { id: 'nav-bar-links' },
 	      _react2.default.createElement(
-	        'h3',
+	        'li',
 	        null,
-	        'Lorenzo Sari\xF1ana'
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: 'about', id: 'nav-about' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'About'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: 'web-development' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Web'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: 'theatrical' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Theatrical'
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'chalchi' },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Lorenzo Sari\xF1ana'
+	        )
 	      )
 	    )
 	  );
@@ -26765,7 +26802,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "http://lida.org/the-hairy-ape/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "../images/el_simio.jpg" })
+	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/el_simio.jpg?raw=true" })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -26783,7 +26820,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "http://lida.org/add-it-up/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "../images/add.jpg" })
+	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/add.jpg?raw=true" })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -26801,7 +26838,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "http://lida.org/mouse-in-a-jar/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "../images/mouse.jpg" })
+	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/mouse.jpg?raw=true" })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -26819,7 +26856,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "http://lida.org/r-u-r-lol/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "../images/rur_lol.jpg" })
+	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rur_lol.jpg?raw=true" })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -26837,7 +26874,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "http://lida.org/rain-of-terror/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "../images/rain_sunglasses.jpg" })
+	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rain_sunglasses.jpg?raw=true" })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -26855,7 +26892,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "#" },
-	                _react2.default.createElement("img", { src: "../images/hot_wax.jpg" })
+	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/hot_wax.jpg?raw=true" })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -26873,7 +26910,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "http://ghostcardshow.com/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "../images/ghost_card.jpg" })
+	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/ghost_card.jpg?raw=true" })
 	              )
 	            )
 	          )
@@ -26886,6 +26923,163 @@
 	}(_react.Component);
 	
 	exports.default = Theatrical;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _webProjectItem = __webpack_require__(235);
+	
+	var _webProjectItem2 = _interopRequireDefault(_webProjectItem);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var WebProjectList = function (_Component) {
+	  _inherits(WebProjectList, _Component);
+	
+	  function WebProjectList() {
+	    _classCallCheck(this, WebProjectList);
+	
+	    var _this = _possibleConstructorReturn(this, (WebProjectList.__proto__ || Object.getPrototypeOf(WebProjectList)).call(this));
+	
+	    _this.state = {
+	      projects: [{
+	        name: 'Dump the Chump',
+	        description: 'Users click on body parts and tap keys to provide the parts with ultra-fresh dance moves.',
+	        tech: 'JavaScript, CSS, HTML',
+	        url: 'https://losgimenos.github.io/dumpthechump/',
+	        imgSrc: 'https://github.com/LosGimenos/dumpthechump/blob/gh-pages/img/screens/Screen%20Shot%202016-09-05%20at%209.26.39%20PM.png?raw=true'
+	      }, {
+	        name: 'Flea',
+	        description: 'Single-page listing app built with React.',
+	        tech: 'React, Node, Firebase, Webpack, Babel, and CSS',
+	        url: 'https://losgimenos.github.io/Flea/',
+	        imgSrc: 'https://github.com/LosGimenos/Flea/raw/master/img/Screen%20Shot%202016-09-26%20at%209.22.36%20PM.png?raw=true'
+	      }, {
+	        name: 'Tell Me Where to Go',
+	        description: 'A restaurant-roulette game designed to help find a restaurant.',
+	        tech: 'React, Postgresql, Node, CSS',
+	        url: 'https://tell-me-where-to-go.herokuapp.com/',
+	        imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-10-18%20at%209.58.26%20PM.png?raw=true'
+	      }, {
+	        name: 'PaFuera',
+	        description: 'NYC events blog aggregator.',
+	        tech: 'React, Postgresql, Node, Cheerio, CSS',
+	        url: 'https://pafuera.herokuapp.com/',
+	        imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-11-11%20at%203.47.00%20PM.png?raw=true'
+	      }]
+	    };
+	    return _this;
+	  }
+	
+	  _createClass(WebProjectList, [{
+	    key: 'render',
+	    value: function render() {
+	      var webProjects = this.state.projects.map(function (project) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'web-project-item' },
+	          _react2.default.createElement(_webProjectItem2.default, {
+	            name: project.name,
+	            description: project.description,
+	            tech: project.tech,
+	            url: project.url,
+	            imgSrc: project.imgSrc
+	          })
+	        );
+	      });
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'web-project-list' },
+	        webProjects
+	      );
+	    }
+	  }]);
+	
+	  return WebProjectList;
+	}(_react.Component);
+	
+	exports.default = WebProjectList;
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var propTypes = {
+	  name: _react2.default.PropTypes.string,
+	  tech: _react2.default.PropTypes.string,
+	  description: _react2.default.PropTypes.string,
+	  url: _react2.default.PropTypes.string,
+	  imgSrc: _react2.default.PropTypes.string
+	};
+	
+	var WebProjectItem = function WebProjectItem(_ref) {
+	  var name = _ref.name,
+	      tech = _ref.tech,
+	      description = _ref.description,
+	      url = _ref.url,
+	      imgSrc = _ref.imgSrc;
+	
+	  return _react2.default.createElement(
+	    "div",
+	    null,
+	    _react2.default.createElement(
+	      "a",
+	      { href: url, target: "_blank" },
+	      _react2.default.createElement(
+	        "h3",
+	        null,
+	        name
+	      ),
+	      _react2.default.createElement("img", { src: imgSrc, className: "web-project-img" }),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        description
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "TECH: ",
+	        tech
+	      )
+	    )
+	  );
+	};
+	
+	WebProjectItem.propTypes = propTypes;
+	
+	exports.default = WebProjectItem;
 
 /***/ }
 /******/ ]);
