@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   devtool: 'source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'client'),
+    contentBase: path.join(__dirname, 'dist'),
     inline: true,
     port: 8080,
   },

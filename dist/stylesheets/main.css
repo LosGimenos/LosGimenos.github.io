@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding:0;
     background-color: black;
+    box-sizing: border-box;
 }
 
 h2, h3 {
@@ -24,45 +25,41 @@ div {
 
 #header {
     margin: 0;
-    height: 80vh;
+    padding: 0;
+    height: 88vh;
     background-image: url("https://farm8.staticflickr.com/7400/28061983425_2ce5b4182e_c.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.chalchi {
-    background-image: url("http://canamay-te.de/site/wp-content/uploads/thirteen.png");
-    background-size: cover;
-    background-position: center;
-    float: right;
-    width: 175px;
-    height: 100%;
-    text-align: center;
-    margin-right: 25px;
-    margin-top: 0;
-}
-
-.chalchi h3 {
-  margin-top: 0;
-  color: black;
-  text-decoration: none;
-}
-
 #nav-bar {
-    position: relative;
+    position: abolsute;
     top: 0;
     background-color: white;
-    height: 95px;
+    height: 2.5em;
     padding-top: 1%;
 }
 
+#nav-bar-links {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+}
+
+#nav-bar-links li {
+  float: left;
+  margin-left: 2%;
+  margin-top: .5%;
+  font-size: 75%;
+}
+
 #nav-bar a {
-    text-decoration: none;
-    float: float;
-    color: dimgray;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 20px;
+  text-decoration: none;
+  color: dimgray;
 }
 
 #nav-bar a:hover {
@@ -70,18 +67,41 @@ div {
     text-decoration-color: white;
 }
 
+.chalchi {
+    position: absolute;
+    background: url("http://canamay-te.de/site/wp-content/uploads/thirteen.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10em;
+    height: 4em;
+    text-align: center;
+    top: 0;
+    right: 0;
+}
+
+.chalchi h3 {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  top: 3%;
+  margin: 0;
+  font-size: 75%;
+}
+
 #hero-text {
     position: absolute;
-    font-size: 35px;
     color: white;
-    margin-left: 750px;
-    margin-top: 225px;
+    font-size: 150%;
+    margin-left: 60%;
+    margin-top: 20%;
 }
 
 div.about-top,
 div.about-bottom {
   color: white;
   width: 100%;
+  font-size: 90%;
 }
 
 div.about-top {
@@ -215,6 +235,21 @@ default width = 800/5 = 160px;
 
 /* Ya cavo esa cochinada */
 
+div#img-simio {
+  height: 600px;
+  background-image: url('../images/el_simio.jpg'),
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #34495e;
+    text-align: center;
+    height: 4%;
+    width: 100%;
+    font-size: 45%;
+}
+
 .mobile_about_blah {
   background-color: grey;
   text-align: center;
@@ -264,14 +299,7 @@ default width = 800/5 = 160px;
     left: 55%;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    background-color: #34495e;
-    text-align: center;
-    height: 5%;
-    width: 100%;
-}
+
 
 .footer_text {
     position: absolute;

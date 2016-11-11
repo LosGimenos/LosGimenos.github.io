@@ -4,16 +4,28 @@ import { Link } from 'react-router';
 const NavBar = () => {
   return (
     <div id="nav-bar">
-      <Link to="about">
-        About
-      </Link>
-      <a href="#">Web</a>
-      <Link to="theatrical">
-        Theatrical
-      </Link>
-      <div className="chalchi">
-        <h3>Lorenzo Sari&ntilde;ana</h3>
-      </div>
+      <ul id="nav-bar-links">
+        <li>
+          <Link to="about" id="nav-about">
+            <p>About</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="/">
+            <p>Web</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="theatrical">
+            <p>Theatrical</p>
+          </Link>
+        </li>
+        </ul>
+          <div className="chalchi">
+            <h3>Lorenzo Sari&ntilde;ana</h3>
+          </div>
+
+
     </div>
   );
 }

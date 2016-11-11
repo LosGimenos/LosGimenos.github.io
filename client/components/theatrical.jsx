@@ -18,7 +18,7 @@ export default class Theatrical extends Component {
                 <a href="#">el simio</a>
               </div>
               <a href="http://lida.org/the-hairy-ape/" target="_blank">
-                <img src="../images/el_simio.jpg"/>
+                <div id="img-simio" />
               </a>
             </li>
             <li>
@@ -26,7 +26,7 @@ export default class Theatrical extends Component {
                 <a href='#'>add it up</a>
               </div>
               <a href="http://lida.org/add-it-up/" target="_blank">
-                <img src="../images/add.jpg"/>
+                <img src="/images/add.jpg"/>
               </a>
             </li>
             <li>
