@@ -27,7 +27,11 @@ div {
     margin: 0;
     padding: 0;
     height: 88vh;
-    background-image: url("https://farm8.staticflickr.com/7400/28061983425_2ce5b4182e_c.jpg");
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ),
+      url("https://farm4.staticflickr.com/3936/15416213716_2d86475bb8_c.jpg");
     background-position: center;
     background-size: cover;
 }
