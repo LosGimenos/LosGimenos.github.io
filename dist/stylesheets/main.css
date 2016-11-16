@@ -33,10 +33,9 @@ div {
 }
 
 #nav-bar {
-    position: abolsute;
     top: 0;
     background-color: white;
-    height: 2.5em;
+    height: 3em;
     padding-top: 1%;
 }
 
@@ -230,5 +229,45 @@ default width = 800/5 = 160px;
     height: 4%;
     width: 100%;
     font-size: 85%;
+}
+
+@media screen and (max-width: 980px) {
+  #nav-bar {
+    height: 4em;
+    font-size: 200%;
+  }
+
+  .chalchi {
+    top: 1.25%;
+    background-size: 225px 225px;
+  }
+
+  .chalchi h3 {
+    top: 1%;
+  }
+
+  #hero-text {
+    font-size: 300%;
+  }
+
+  div.about-top,
+  div.about-bottom {
+    font-size: 175%;
+  }
+
+  div#theatrical-title {
+    margin-top: 15%;
+    font-size: 185%;
+  }
+
+  .accordian {
+    margin-top: 30%;
+  }
+
+
+  #footer {
+    font-size: 165%;
+  }
+
 }
 
