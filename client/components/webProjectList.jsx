@@ -16,7 +16,7 @@ export default class WebProjectList extends Component {
         {
           name: 'Flea',
           description: 'Single-page listing app built with React.',
-          tech: 'React, Node, Firebase, Webpack, Babel, and CSS',
+          tech: 'React, Node, Firebase, Webpack, Babel, CSS',
           url: `https://losgimenos.github.io/Flea/`,
           imgSrc: `https://github.com/LosGimenos/Flea/raw/master/img/Screen%20Shot%202016-09-26%20at%209.22.36%20PM.png?raw=true`,
         },
@@ -38,8 +38,8 @@ export default class WebProjectList extends Component {
           name: 'Realtor Shannon',
           description: 'Personal site for NYC based realtor',
           tech: 'JQuery, CSS',
-          url: 'realtorshannon.nyc',
-          imgSrc: '',
+          url: 'http://realtorshannon.nyc',
+          imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-11-21%20at%201.03.59%20PM.png?raw=true',
         },
       ],
     };
