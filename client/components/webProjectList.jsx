@@ -39,7 +39,7 @@ export default class WebProjectList extends Component {
           description: 'Personal site for NYC based realtor',
           tech: 'JQuery, CSS',
           url: 'http://realtorshannon.nyc',
-          imgSrc: 'https://raw.githubusercontent.com/LosGimenos/LosGimenos.github.io/63f2f5ea06d3d64f6ff62efc677f7be02f28e427/images/Screen%20Shot%202016-11-21%20at%201.03.59%20PM.png',
+          imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-11-21%20at%201.03.59%20PM.png?raw=true',
         },
       ],
     };
