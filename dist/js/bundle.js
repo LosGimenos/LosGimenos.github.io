@@ -26989,8 +26989,8 @@
 	        name: 'Realtor Shannon',
 	        description: 'Personal site for NYC based realtor',
 	        tech: 'JQuery, CSS',
-	        url: 'realtorshannon.nyc',
-	        imgSrc: ''
+	        url: 'http://realtorshannon.nyc',
+	        imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-11-21%20at%201.03.59%20PM.png?raw=true'
 	      }]
 	    };
 	    return _this;
