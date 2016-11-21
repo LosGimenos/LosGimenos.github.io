@@ -202,6 +202,8 @@ default width = 800/5 = 160px;
   left: 14%;
   margin-top: 5%;
   width: 85%;
+  overflow: scroll;
+  margin-bottom: 10%;
 }
 
 .web-project-item {
@@ -226,7 +228,7 @@ default width = 800/5 = 160px;
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: #34495e;
     text-align: center;
