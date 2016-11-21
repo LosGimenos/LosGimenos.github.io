@@ -26985,6 +26985,12 @@
 	        tech: 'React, Postgresql, Node, Cheerio, CSS',
 	        url: 'https://pafuera.herokuapp.com/',
 	        imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-11-11%20at%203.47.00%20PM.png?raw=true'
+	      }, {
+	        name: 'Realtor Shannon',
+	        description: 'Personal site for NYC based realtor',
+	        tech: 'JQuery, CSS',
+	        url: 'realtorshannon.nyc',
+	        imgSrc: ''
 	      }]
 	    };
 	    return _this;
@@ -27008,8 +27014,12 @@
 	      });
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'web-project-list' },
-	        webProjects
+	        { id: 'web-project-list-wrapper' },
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'web-project-list' },
+	          webProjects
+	        )
 	      );
 	    }
 	  }]);
