@@ -49,7 +49,7 @@ div {
   padding: 0;
   top: 0px;
   list-style: none;
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
 }
 
@@ -121,12 +121,12 @@ div.about-bottom-cred {
   flex-basis: 25%;
 }
 
-div.about-bottom a {
+div.about-bottom-info a {
     text-decoration: none;
     color: #6C7A89;
 }
 
-div.about-bottom a:hover {
+div.about-bottom-info a:hover {
     text-decoration: underline;
 }
 
