@@ -199,21 +199,32 @@ default width = 800/5 = 160px;
 
 #web-project-list {
   position: relative;
-  left: 14%;
+  left: 12%;
   margin-top: 5%;
   width: 85%;
-  overflow: scroll;
-  margin-bottom: 10%;
-}
+ /* overflow: scroll;*/
+/*  margin-bottom: 10%;
+*/}
 
 .web-project-item {
   color: white;
-  width: 25em;
+  width: 30em;
   height: 15em;
   text-align: center;
   float: left;
-  margin: 1% 0 1% 5%;
+  margin: 0 0 1% 1%;
   border: solid 1px white;
+}
+
+.web-project-item-base {
+  /*postion: relative;*/
+  height: 100%;
+  overflow: hidden;
+}
+
+.web-project-item-base:hover .web-project-item-details {
+  display: flex;
+  animation: fadein .5s;
 }
 
 .web-project-item a {
@@ -221,22 +232,29 @@ default width = 800/5 = 160px;
   color: white;
 }
 
-.web-project-img {
-  width: 25%;
-  height: 25%;
-  margin: auto;
+div.web-project-item-details {
+  height: 15em;
+  background: rgba(0, 0, 0, .75);
+  justify-content: center;
+  align-items: center;
 }
 
-#footer {
-    position: fixed;
-    bottom: 0;
-    background-color: #34495e;
-    text-align: center;
-    height: 4%;
-    width: 100%;
-    font-size: 85%;
+.web-project-title {
+  font-size: 300%;
 }
 
+.hidden {
+  display: none;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/************************/
+/*MEDIA QUERY TIME!!*/
+/************************/
 @media screen and (max-width: 980px) {
   #nav-bar {
     height: 4em;
