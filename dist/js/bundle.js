@@ -26975,17 +26975,17 @@
 	      //   imgSrc: `https://github.com/LosGimenos/Flea/raw/master/img/Screen%20Shot%202016-09-26%20at%209.22.36%20PM.png?raw=true`,
 	      // },
 	      {
+	        name: 'PaFuera',
+	        description: 'NYC events blog aggregator.',
+	        tech: 'React, Postgresql, Node, Cheerio, CSS',
+	        url: 'https://pafuera.herokuapp.com/',
+	        imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-12-20%20at%201.56.31%20PM.png?raw=true'
+	      }, {
 	        name: 'Tell Me Where to Go',
 	        description: 'A restaurant-roulette game designed to help find a restaurant.',
 	        tech: 'React, Postgresql, Node, CSS',
 	        url: 'https://tell-me-where-to-go.herokuapp.com/',
 	        imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-10-18%20at%209.58.26%20PM.png?raw=true'
-	      }, {
-	        name: 'PaFuera',
-	        description: 'NYC events blog aggregator.',
-	        tech: 'React, Postgresql, Node, Cheerio, CSS',
-	        url: 'https://pafuera.herokuapp.com/',
-	        imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-11-11%20at%203.47.00%20PM.png?raw=true'
 	      }, {
 	        name: 'Realtor Shannon',
 	        description: 'Personal site for NYC based realtor',
@@ -27034,7 +27034,7 @@
 /* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27061,28 +27061,36 @@
 	      url = _ref.url,
 	      imgSrc = _ref.imgSrc;
 	
+	  var divStyle = {
+	    background: 'url(\'' + imgSrc + '\')',
+	    backgroundSize: 'cover',
+	    backgroundRepeat: 'no-repeat'
+	  };
 	  return _react2.default.createElement(
-	    "div",
-	    null,
+	    'div',
+	    { className: 'web-project-item-base', style: divStyle },
 	    _react2.default.createElement(
-	      "a",
-	      { href: url, target: "_blank" },
+	      'div',
+	      { className: 'hidden web-project-item-details' },
 	      _react2.default.createElement(
-	        "h3",
-	        null,
-	        name
-	      ),
-	      _react2.default.createElement("img", { src: imgSrc, className: "web-project-img" }),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        description
-	      ),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "TECH: ",
-	        tech
+	        'a',
+	        { href: url, target: '_blank' },
+	        _react2.default.createElement(
+	          'h3',
+	          { className: 'web-project-title' },
+	          name
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          description
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'TECH: ',
+	          tech
+	        )
 	      )
 	    )
 	  );
