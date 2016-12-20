@@ -15,7 +15,7 @@ const NavBar = () => {
             <p>Web</p>
           </Link>
         </li>
-        <li>
+        <li className="hidden">
           <Link to="theatrical">
             <p>Theatrical</p>
           </Link>

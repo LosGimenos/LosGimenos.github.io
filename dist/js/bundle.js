@@ -26543,7 +26543,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'li',
-	        null,
+	        { className: 'hidden' },
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: 'theatrical' },
@@ -26663,12 +26663,26 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "I build stories and I tell stories. Specializes in devised work and creating immersive theatrical worlds. Experienced with lighting design, sound design, and scoring."
+	          "I build stories and I tell stories. ",
+	          _react2.default.createElement("br", null),
+	          "Full Stack web developer using ",
+	          _react2.default.createElement("br", null),
+	          "CSS, JS, Node, React, Rails, PostgreSQL. ",
+	          _react2.default.createElement("br", null),
+	          "Dabbles in Python, Pandas, PHP, D3. ",
+	          _react2.default.createElement("br", null),
+	          "Other software proficiences include: ",
+	          _react2.default.createElement("br", null),
+	          "Final Cut Pro, Protools, Photoshop, Illustrator, Isadora, QLab and Publisher."
 	        ),
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "Full Stack web developer proficient with HTML, CSS, JS, Node, React and RUBY. Other software proficiences include: Final Cut Pro, Protools, Photoshop, Illustrator, Isadora, QLab and Publisher."
+	          "Specializes in devised work and creating immersive theatrical worlds. Experienced with lighting design, sound design, and scoring. ",
+	          _react2.default.createElement("br", null),
+	          " ",
+	          _react2.default.createElement("br", null),
+	          "Takes some pictures from time to time."
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -26692,7 +26706,7 @@
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement(
 	            "a",
-	            { href: "https://github.com/LosGimenos", target: "_blank" },
+	            { href: "https://github.com/LosGimenos/", target: "_blank" },
 	            "@LosGimenos"
 	          )
 	        ),
@@ -26703,7 +26717,7 @@
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement(
 	            "a",
-	            { href: "https://www.linkedin.com/in/lorenzosarinana", target: "_blank" },
+	            { href: "https://www.linkedin.com/in/lorenzosarinana/", target: "_blank" },
 	            _react2.default.createElement(
 	              "span",
 	              { className: "shrink" },
@@ -26720,6 +26734,17 @@
 	            "a",
 	            { href: "https://www.instagram.com/spasticyomi/", target: "_blank" },
 	            "@spasticyomi"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "flickr:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://www.flickr.com/photos/lorenzosarinana/", target: "_blank" },
+	            "@deRetraido"
 	          )
 	        )
 	      )

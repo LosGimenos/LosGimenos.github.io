@@ -21,18 +21,20 @@ const About = () => {
         <div className="about-bottom">
           <div className="about-bottom-cred">
             <p>
-              I build stories and I tell stories.
+              I build stories and I tell stories. <br />
+              Full Stack web developer using <br />
+              CSS, JS, Node, React, Rails, PostgreSQL. <br />
+              Dabbles in Python, Pandas, PHP, D3. <br />
+              Other software proficiences include: <br />
+              Final Cut Pro, Protools, Photoshop, Illustrator,
+              Isadora, QLab and Publisher.
+            </p>
+            <p>
               Specializes in devised work and creating immersive
               theatrical worlds.
               Experienced with lighting design,
-              sound design, and scoring.
-            </p>
-            <p>
-              Full Stack web developer proficient with
-              HTML, CSS, JS, Node, React and RUBY.
-              Other software proficiences include:
-              Final Cut Pro, Protools, Photoshop, Illustrator,
-              Isadora, QLab and Publisher.
+              sound design, and scoring. <br /> <br />
+              Takes some pictures from time to time.
             </p>
           </div>
           <div className="about-bottom-info">
@@ -42,18 +44,23 @@ const About = () => {
               </a>
             </p>
             <p>github:<br />
-              <a href="https://github.com/LosGimenos" target="_blank">
+              <a href="https://github.com/LosGimenos/" target="_blank">
                 @LosGimenos
               </a>
             </p>
             <p>linkedin:<br />
-              <a href="https://www.linkedin.com/in/lorenzosarinana" target="_blank">
+              <a href="https://www.linkedin.com/in/lorenzosarinana/" target="_blank">
                 <span className="shrink">@lorenzosarinana</span>
               </a>
             </p>
             <p>instagram:<br />
               <a href="https://www.instagram.com/spasticyomi/" target="_blank">
                 @spasticyomi
+              </a>
+            </p>
+            <p>flickr:<br />
+              <a href="https://www.flickr.com/photos/lorenzosarinana/" target="_blank">
+                @deRetraido
               </a>
             </p>
           </div>
