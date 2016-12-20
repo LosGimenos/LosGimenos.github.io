@@ -8,15 +8,22 @@ const propTypes = {
   imgSrc: React.PropTypes.string,
 };
 
+
 const WebProjectItem = ({ name, tech, description, url, imgSrc }) => {
+  const divStyle = {
+    background: `url('${imgSrc}')`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  };
   return (
-    <div>
-      <a href={url} target="_blank">
-        <h3>{name}</h3>
-        <img src={imgSrc} className="web-project-img" />
-        <p>{description}</p>
-        <p>TECH: {tech}</p>
-      </a>
+    <div className="web-project-item-base" style={divStyle}>
+        <div className="hidden web-project-item-details">
+          <a href={url} target="_blank">
+          <h3 className="web-project-title">{name}</h3>
+          <p>{description}</p>
+          <p>TECH: {tech}</p>
+          </a>
+        </div>
     </div>
   );
 }
