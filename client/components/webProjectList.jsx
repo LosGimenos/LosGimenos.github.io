@@ -13,13 +13,13 @@ export default class WebProjectList extends Component {
           url: `https://losgimenos.github.io/dumpthechump/`,
           imgSrc: `https://github.com/LosGimenos/dumpthechump/blob/gh-pages/img/screens/Screen%20Shot%202016-09-05%20at%209.26.39%20PM.png?raw=true`,
         },
-        {
-          name: 'Flea',
-          description: 'Single-page listing app built with React.',
-          tech: 'React, Node, Firebase, Webpack, Babel, and CSS',
-          url: `https://losgimenos.github.io/Flea/`,
-          imgSrc: `https://github.com/LosGimenos/Flea/raw/master/img/Screen%20Shot%202016-09-26%20at%209.22.36%20PM.png?raw=true`,
-        },
+        // {
+        //   name: 'Flea',
+        //   description: 'Single-page listing app built with React.',
+        //   tech: 'React, Node, Firebase, Webpack, Babel, and CSS',
+        //   url: `https://losgimenos.github.io/Flea/`,
+        //   imgSrc: `https://github.com/LosGimenos/Flea/raw/master/img/Screen%20Shot%202016-09-26%20at%209.22.36%20PM.png?raw=true`,
+        // },
         {
           name: 'Tell Me Where to Go',
           description: 'A restaurant-roulette game designed to help find a restaurant.',
