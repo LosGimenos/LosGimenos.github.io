@@ -15,7 +15,7 @@ export default class App extends Component {
         <div id="main-content">
           {this.props.children}
         </div>
-        <Footer />
+        {/*<Footer />*/}
       </div>
     );
   }
