@@ -26447,8 +26447,7 @@
 	          'div',
 	          { id: 'main-content' },
 	          this.props.children
-	        ),
-	        _react2.default.createElement(_footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);
