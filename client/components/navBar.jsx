@@ -15,10 +15,10 @@ const NavBar = () => {
             <p>Web</p>
           </Link>
         </li>
-        <li className="hidden">
-          <Link to="theatrical">
-            <p>Theatrical</p>
-          </Link>
+        <li>
+          <a href="https://losgimenos.github.io/enzoThinks/" target="_blank">
+            <p>Blog</p>
+          </a>
         </li>
         </ul>
           <Link to="/">
