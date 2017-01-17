@@ -26543,14 +26543,14 @@
 	      ),
 	      _react2.default.createElement(
 	        'li',
-	        { className: 'hidden' },
+	        null,
 	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: 'theatrical' },
+	          'a',
+	          { href: 'https://losgimenos.github.io/enzoThinks/', target: '_blank' },
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Theatrical'
+	            'Blog'
 	          )
 	        )
 	      )
