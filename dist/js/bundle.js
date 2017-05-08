@@ -26558,15 +26558,7 @@
 	    _react2.default.createElement(
 	      _reactRouter.Link,
 	      { to: '/' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'chalchi' },
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Lorenzo Sari\xF1ana'
-	        )
-	      )
+	      _react2.default.createElement('div', { className: 'chalchi' })
 	    )
 	  );
 	};
@@ -26599,7 +26591,7 @@
 	      _react2.default.createElement(
 	        "p",
 	        null,
-	        "Hey! I'm Lorenzo! I do things!"
+	        "Hey! I'm Larry! I do things!"
 	      )
 	    )
 	  );
@@ -26695,8 +26687,8 @@
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement(
 	            "a",
-	            { href: "mailto:enzosarin@gmail.com" },
-	            "enzosarin at gmail.com"
+	            { href: "mailto:larryhernanjr@gmail.com" },
+	            "larryhernanjr at gmail.com"
 	          )
 	        ),
 	        _react2.default.createElement(

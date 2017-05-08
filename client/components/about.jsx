@@ -39,8 +39,8 @@ const About = () => {
           </div>
           <div className="about-bottom-info">
             <p>email:<br />
-              <a href="mailto:enzosarin@gmail.com">
-                enzosarin at gmail.com
+              <a href="mailto:larryhernanjr@gmail.com">
+                larryhernanjr at gmail.com
               </a>
             </p>
             <p>github:<br />

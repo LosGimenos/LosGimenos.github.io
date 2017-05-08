@@ -23,7 +23,6 @@ const NavBar = () => {
         </ul>
           <Link to="/">
             <div className="chalchi">
-              <h3>Lorenzo Sari&ntilde;ana</h3>
             </div>
           </Link>
     </div>
