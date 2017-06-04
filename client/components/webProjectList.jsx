@@ -20,6 +20,13 @@ export default class WebProjectList extends Component {
           url: `https://pafuera.herokuapp.com/`,
           imgSrc: `https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-12-20%20at%201.56.31%20PM.png?raw=true`,
         },
+        {
+          name: 'Lorenzo Sarinana',
+          description: 'Performance Artist portfolio site',
+          tech: 'React, Webpack, SASS',
+          url: 'http://lorenzosarinana.com',
+          imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/enzoSite.png?raw=true'
+        }
         // {
         //   name: 'Tell Me Where to Go',
         //   description: 'A restaurant-roulette game designed to help find a restaurant.',
