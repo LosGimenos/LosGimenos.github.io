@@ -4,6 +4,17 @@ import { Link } from 'react-router';
 const NavBar = () => {
   return (
     <div id="nav-bar">
+      <div className="nav-bar__title">
+        <h2>
+          Larry Hernandez
+        </h2>
+      </div>
+      {
+      // <Link to="/">
+      //   <div className="chalchi">
+      //   </div>
+      // </Link>
+      }
       <ul id="nav-bar-links">
         <li>
           <Link to="about" id="nav-about">
@@ -12,7 +23,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link to="web-development">
-            <p>Web</p>
+            <p>Portfolio</p>
           </Link>
         </li>
         <li>
@@ -21,10 +32,6 @@ const NavBar = () => {
           </a>
         </li>
         </ul>
-          <Link to="/">
-            <div className="chalchi">
-            </div>
-          </Link>
     </div>
   );
 }

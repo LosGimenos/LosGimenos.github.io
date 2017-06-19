@@ -26513,6 +26513,15 @@
 	    'div',
 	    { id: 'nav-bar' },
 	    _react2.default.createElement(
+	      'div',
+	      { className: 'nav-bar__title' },
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'Larry Hernandez'
+	      )
+	    ),
+	    _react2.default.createElement(
 	      'ul',
 	      { id: 'nav-bar-links' },
 	      _react2.default.createElement(
@@ -26537,7 +26546,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Web'
+	            'Portfolio'
 	          )
 	        )
 	      ),
@@ -26554,11 +26563,6 @@
 	          )
 	        )
 	      )
-	    ),
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/' },
-	      _react2.default.createElement('div', { className: 'chalchi' })
 	    )
 	  );
 	};
@@ -26591,7 +26595,12 @@
 	      _react2.default.createElement(
 	        "p",
 	        null,
-	        "Hey! I'm Larry! I do things!"
+	        "Creator. ",
+	        _react2.default.createElement("br", null),
+	        "Collaborator.",
+	        _react2.default.createElement("br", null),
+	        "Devisor. ",
+	        _react2.default.createElement("br", null)
 	      )
 	    )
 	  );
