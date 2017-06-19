@@ -5,6 +5,7 @@ import HeroPage from '../components/heroPage.jsx';
 import About from '../components/about.jsx';
 import Theatrical from '../components/theatrical.jsx';
 import WebProjectList from '../components/webProjectList.jsx';
+import Contact from '../components/contact.jsx';
 
 const Routes = () => {
   return (
@@ -14,6 +15,7 @@ const Routes = () => {
         <Route path="about" component={About} />
         <Route path="theatrical" component={Theatrical} />
         <Route path="web-development" component={WebProjectList} />
+        <Route path="contact" component={Contact} />
       </Route>
     </Router>
   );

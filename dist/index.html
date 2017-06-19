@@ -19,20 +19,28 @@
   const heroText = document.querySelector('#hero-text');
   const textDevisor = document.querySelector('.hero-text__devisor');
   const textCollaborator = document.querySelector('.hero-text__collaborator');
-  const textCreator = document.querySelector('.hero-text__creator');
+  const textMaker = document.querySelector('.hero-text__maker');
   // const textDevisor = document.querySelector('.hero-text__devisor');
 
   const t1 = new TimelineLite();
 
   t1
-    .set([textDevisor, textCreator, textCollaborator], {autoAlpha: 0});
+    .set([textMaker, textCollaborator], {x: -275, y: -225, autoAlpha: 0})
+    .set(textDevisor, {x: -400, y: -225, autoAlpha: 0})
 
   window.onload = function() {
+    const fadeUpDevisor = function() {
+      new TweenLite(textDevisor, 1, {y: -50, autoAlpha: 0});
+    }
+
+    const fadeUpCollaborator = function() {
+      new TweenLite(textCollaborator, 1, {y: -50, autoAlpha: 0});
+    }
 
     t1
-      .to(textDevisor, 2, {x: 150, autoAlpha: 1})
-      .to(textCollaborator, 2, {x: 140, autoAlpha: 1})
-      .to(textCreator, 2, {x:130, autoAlpha: 1})
+      .to(textDevisor, 1.5, {x: -200, autoAlpha: 1, onComplete: fadeUpDevisor})
+      .to(textCollaborator, 1.5, {x: 10, autoAlpha: 1, onComplete: fadeUpCollaborator})
+      .to(textMaker, 1.5, {x:225, autoAlpha: 1})
   }
 </script>
 </body>

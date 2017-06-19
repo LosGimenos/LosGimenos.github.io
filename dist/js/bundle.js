@@ -21465,6 +21465,10 @@
 	
 	var _webProjectList2 = _interopRequireDefault(_webProjectList);
 	
+	var _contact = __webpack_require__(236);
+	
+	var _contact2 = _interopRequireDefault(_contact);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Routes = function Routes() {
@@ -21477,7 +21481,8 @@
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _heroPage2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'theatrical', component: _theatrical2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'web-development', component: _webProjectList2.default })
+	      _react2.default.createElement(_reactRouter.Route, { path: 'web-development', component: _webProjectList2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _contact2.default })
 	    )
 	  );
 	};
@@ -26562,6 +26567,19 @@
 	            'Blog'
 	          )
 	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: 'contact' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Contact'
+	          )
+	        )
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -26599,11 +26617,11 @@
 	      { id: "hero-text" },
 	      _react2.default.createElement(
 	        "div",
-	        { className: "left-float hero-text__creator" },
+	        { className: "left-float hero-text__maker" },
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "Creator. "
+	          "Maker. "
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -26617,7 +26635,7 @@
 	      ),
 	      _react2.default.createElement(
 	        "div",
-	        { className: "hero-text__devisor" },
+	        { className: "left-float hero-text__devisor" },
 	        _react2.default.createElement(
 	          "p",
 	          null,
@@ -26649,127 +26667,39 @@
 	var About = function About() {
 	  return _react2.default.createElement(
 	    "div",
-	    { id: "about" },
+	    { className: "about" },
 	    _react2.default.createElement(
-	      "div",
-	      { className: "about-top" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "about-top-h1" },
-	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          "Creator",
-	          _react2.default.createElement("br", null),
-	          "Collaborator",
-	          _react2.default.createElement("br", null),
-	          "Devisor"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "about-top-right-h1 clearfix" },
-	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          "Find me here."
-	        )
-	      )
+	      "h1",
+	      null,
+	      "Storybuilder"
 	    ),
 	    _react2.default.createElement("hr", null),
 	    _react2.default.createElement(
 	      "div",
-	      { className: "about-bottom" },
+	      { className: "about__p" },
 	      _react2.default.createElement(
-	        "div",
-	        { className: "about-bottom-cred" },
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "I build stories and I tell stories. ",
-	          _react2.default.createElement("br", null),
-	          "Full Stack web developer using ",
-	          _react2.default.createElement("br", null),
-	          "CSS, JS, Node, React, Rails, PostgreSQL. ",
-	          _react2.default.createElement("br", null),
-	          "Dabbles in Python, Pandas, PHP, D3. ",
-	          _react2.default.createElement("br", null),
-	          "Other software proficiences include: ",
-	          _react2.default.createElement("br", null),
-	          "Final Cut Pro, Protools, Photoshop, Illustrator, Isadora, QLab and Publisher."
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Specializes in devised work and creating immersive theatrical worlds. Experienced with lighting design, sound design, and scoring. ",
-	          _react2.default.createElement("br", null),
-	          " ",
-	          _react2.default.createElement("br", null),
-	          "Takes some pictures from time to time."
-	        )
+	        "p",
+	        null,
+	        "Lifelong tech hobbyist. Full Stack web developer using ",
+	        _react2.default.createElement("br", null),
+	        "SASS, Node, React, Rails, Webpack, PostgreSQL. ",
+	        _react2.default.createElement("br", null),
+	        "Dabbles in Python, Pandas, PHP, D3, Neo4j, Flask. ",
+	        _react2.default.createElement("br", null),
+	        "Other software proficiences include: ",
+	        _react2.default.createElement("br", null),
+	        "Final Cut Pro, Protools, Photoshop, Illustrator, Isadora, QLab and Publisher."
 	      ),
 	      _react2.default.createElement(
-	        "div",
-	        { className: "about-bottom-info" },
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "email:",
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "mailto:larryhernanjr@gmail.com" },
-	            "larryhernanjr at gmail.com"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "github:",
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://github.com/LosGimenos/", target: "_blank" },
-	            "@LosGimenos"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "linkedin:",
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://www.linkedin.com/in/lorenzosarinana/", target: "_blank" },
-	            _react2.default.createElement(
-	              "span",
-	              { className: "shrink" },
-	              "@lorenzosarinana"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "instagram:",
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://www.instagram.com/spasticyomi/", target: "_blank" },
-	            "@spasticyomi"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "flickr:",
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://www.flickr.com/photos/lorenzosarinana/", target: "_blank" },
-	            "@deRetraido"
-	          )
-	        )
+	        "p",
+	        null,
+	        "Specializes in devised work and creating immersive theatrical worlds. ",
+	        _react2.default.createElement("br", null),
+	        "Experienced with lighting design, sound design, and scoring. ",
+	        _react2.default.createElement("br", null),
+	        " ",
+	        _react2.default.createElement("br", null),
+	        "Takes some pictures from time to time."
 	      )
 	    )
 	  );
@@ -27155,6 +27085,90 @@
 	WebProjectItem.propTypes = propTypes;
 	
 	exports.default = WebProjectItem;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Contact = function Contact() {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "about-bottom-info" },
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "email:",
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "a",
+	        { href: "mailto:larryhernanjr@gmail.com" },
+	        "larryhernanjr at gmail.com"
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "github:",
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "a",
+	        { href: "https://github.com/LosGimenos/", target: "_blank" },
+	        "@LosGimenos"
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "linkedin:",
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "a",
+	        { href: "https://www.linkedin.com/in/lorenzosarinana/", target: "_blank" },
+	        _react2.default.createElement(
+	          "span",
+	          { className: "shrink" },
+	          "@lorenzosarinana"
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "instagram:",
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "a",
+	        { href: "https://www.instagram.com/spasticyomi/", target: "_blank" },
+	        "@spasticyomi"
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "flickr:",
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "a",
+	        { href: "https://www.flickr.com/photos/lorenzosarinana/", target: "_blank" },
+	        "@deRetraido"
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Contact;
 
 /***/ }
 /******/ ]);
