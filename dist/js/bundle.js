@@ -26682,7 +26682,7 @@
 	        null,
 	        "Lifelong tech hobbyist. Full Stack web developer using ",
 	        _react2.default.createElement("br", null),
-	        "SASS, Node, React, Rails, Webpack, PostgreSQL. ",
+	        "SASS, GSAP, Node, React, Rails, Webpack, PostgreSQL. ",
 	        _react2.default.createElement("br", null),
 	        "Dabbles in Python, Pandas, PHP, D3, Neo4j, Flask. ",
 	        _react2.default.createElement("br", null),
@@ -27105,7 +27105,17 @@
 	var Contact = function Contact() {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "about-bottom-info" },
+	    { className: "contact" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "contact__title" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "find me here"
+	      )
+	    ),
+	    _react2.default.createElement("hr", null),
 	    _react2.default.createElement(
 	      "p",
 	      null,

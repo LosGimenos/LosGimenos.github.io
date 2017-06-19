@@ -121,6 +121,20 @@ div.about {
   color: #fff;
 }
 
+div.contact {
+  text-align: center;
+  color: #fff;
+}
+
+div.contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+div.contact a:hover {
+  text-decoration: underline;
+}
+
 div.shrink {
     font-size: 90%;
 }
@@ -193,45 +207,40 @@ div.web-project-item-details {
     font-size: 200%;
   }
 
-  .chalchi {
-    top: 1.25%;
-    background-size: 225px 225px;
+  #nav-bar-links {
+    display: none;
   }
 
-  .chalchi h3 {
-    top: 1%;
+  .chalchi {
+    top: 0;
+    background-size: 300px 300px;
   }
 
   #hero-text {
-    font-size: 300%;
+    font-size: 400%;
   }
 
-div.about-top,
-div.about-bottom {
-  font-size: 175%;
-}
+  #web-project-list-wrapper {
+    position: relative;
+    /*height: 91vh;*/
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
 
-#web-project-list-wrapper {
-  position: relative;
-  /*height: 91vh;*/
-  overflow-y: scroll;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10%;
-}
+  #web-project-list {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-#web-project-list {
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.web-project-item {
-  width: 100%;
-  font-size: 150%;
-}
+  .web-project-item {
+    width: 100%;
+    font-size: 150%;
+  }
 
   div#theatrical-title {
     margin-top: 15%;
