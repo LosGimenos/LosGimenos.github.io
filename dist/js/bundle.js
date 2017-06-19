@@ -26563,6 +26563,11 @@
 	          )
 	        )
 	      )
+	    ),
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/' },
+	      _react2.default.createElement('div', { className: 'chalchi' })
 	    )
 	  );
 	};
@@ -26595,12 +26600,7 @@
 	      _react2.default.createElement(
 	        "p",
 	        null,
-	        "Creator. ",
-	        _react2.default.createElement("br", null),
-	        "Collaborator.",
-	        _react2.default.createElement("br", null),
-	        "Devisor. ",
-	        _react2.default.createElement("br", null)
+	        "Creator. Collaborator. Devisor."
 	      )
 	    )
 	  );

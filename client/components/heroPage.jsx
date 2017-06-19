@@ -5,9 +5,9 @@ const HeroPage = () => {
     <div id="header">
       <div id="hero-text">
         <p>
-          Creator. <br />
-          Collaborator.<br />
-          Devisor. <br />
+          Creator.
+          Collaborator.
+          Devisor.
         </p>
       </div>
     </div>

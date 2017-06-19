@@ -9,12 +9,7 @@ const NavBar = () => {
           Larry Hernandez
         </h2>
       </div>
-      {
-      // <Link to="/">
-      //   <div className="chalchi">
-      //   </div>
-      // </Link>
-      }
+
       <ul id="nav-bar-links">
         <li>
           <Link to="about" id="nav-about">
@@ -31,7 +26,11 @@ const NavBar = () => {
             <p>Blog</p>
           </a>
         </li>
-        </ul>
+      </ul>
+      <Link to="/">
+        <div className="chalchi">
+        </div>
+      </Link>
     </div>
   );
 }
