@@ -12,6 +12,7 @@ body {
     padding:0;
     background-color: black;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 h2, h3 {
@@ -26,12 +27,14 @@ div {
 #header {
     margin: 0;
     padding: 0;
-    height: 91.5vh;
+    height: 91vh;
     background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
       ),
-      /*url("http://canamay-te.de/site/wp-content/uploads/thirteen.png")*/
+      url(
+        "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/196596_1873965459094_10812_n.jpg?oh=76b7597867e72f81c618319937596d7d&oe=59DB3529"
+        )
       ;
     background-position: center;
     background-size: cover;
@@ -98,12 +101,18 @@ div {
     text-decoration-color: black;
 }
 
+.left-float {
+  float: left;
+}
+
 #hero-text {
-    position: absolute;
-    color: white;
-    font-size: 300%;
-    left: 42%;
-    top: 10%;
+  position: absolute;
+  color: white;
+  width: 20em;
+  font-size: 300%;
+  left: 5%;
+  bottom: 3%;
+  display: inline;
 }
 
 div.about-top,

@@ -13,5 +13,27 @@
   <div id="root"></div>
 
 <script type="text/javascript" src="js/bundle.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script type="text/javascript">
+
+  const heroText = document.querySelector('#hero-text');
+  const textDevisor = document.querySelector('.hero-text__devisor');
+  const textCollaborator = document.querySelector('.hero-text__collaborator');
+  const textCreator = document.querySelector('.hero-text__creator');
+  // const textDevisor = document.querySelector('.hero-text__devisor');
+
+  const t1 = new TimelineLite();
+
+  t1
+    .set([textDevisor, textCreator, textCollaborator], {autoAlpha: 0});
+
+  window.onload = function() {
+
+    t1
+      .to(textDevisor, 2, {x: 150, autoAlpha: 1})
+      .to(textCollaborator, 2, {x: 140, autoAlpha: 1})
+      .to(textCreator, 2, {x:130, autoAlpha: 1})
+  }
+</script>
 </body>
 </html>

@@ -26598,9 +26598,31 @@
 	      "div",
 	      { id: "hero-text" },
 	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "Creator. Collaborator. Devisor."
+	        "div",
+	        { className: "left-float hero-text__creator" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Creator. "
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "left-float hero-text__collaborator" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Collaborator. "
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "hero-text__devisor" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Devisor. "
+	        )
 	      )
 	    )
 	  );
