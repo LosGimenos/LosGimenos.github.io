@@ -21457,11 +21457,11 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _webProjectList = __webpack_require__(234);
+	var _webProjectList = __webpack_require__(233);
 	
 	var _webProjectList2 = _interopRequireDefault(_webProjectList);
 	
-	var _contact = __webpack_require__(236);
+	var _contact = __webpack_require__(235);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
@@ -26713,8 +26713,7 @@
 	exports.default = About;
 
 /***/ },
-/* 233 */,
-/* 234 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26729,7 +26728,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _webProjectItem = __webpack_require__(235);
+	var _webProjectItem = __webpack_require__(234);
 	
 	var _webProjectItem2 = _interopRequireDefault(_webProjectItem);
 	
@@ -26838,7 +26837,7 @@
 	exports.default = WebProjectList;
 
 /***/ },
-/* 235 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26909,7 +26908,7 @@
 	exports.default = WebProjectItem;
 
 /***/ },
-/* 236 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
