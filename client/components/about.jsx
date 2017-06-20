@@ -20,8 +20,12 @@ const About = () => {
           <p>
             Specializes in devised work and creating immersive
             theatrical worlds. <br />
-            Experienced with lighting design,
-            sound design, and scoring. <br /> <br />
+            Experienced with projection mapping, lighting design,
+            sound design, and scoring. <br />
+            Company member of the hyper-media artistic collective,<br />
+            'The LIDA Project'.<br />
+          </p>
+          <p>
             Takes some pictures from time to time.
           </p>
         </div>

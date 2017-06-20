@@ -21457,10 +21457,6 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _theatrical = __webpack_require__(233);
-	
-	var _theatrical2 = _interopRequireDefault(_theatrical);
-	
 	var _webProjectList = __webpack_require__(234);
 	
 	var _webProjectList2 = _interopRequireDefault(_webProjectList);
@@ -21480,7 +21476,6 @@
 	      { path: '/', component: _app2.default },
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _heroPage2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _about2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'theatrical', component: _theatrical2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'web-development', component: _webProjectList2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _contact2.default })
 	    )
@@ -26695,10 +26690,16 @@
 	        null,
 	        "Specializes in devised work and creating immersive theatrical worlds. ",
 	        _react2.default.createElement("br", null),
-	        "Experienced with lighting design, sound design, and scoring. ",
+	        "Experienced with projection mapping, lighting design, sound design, and scoring. ",
 	        _react2.default.createElement("br", null),
-	        " ",
+	        "Company member of the hyper-media artistic collective,",
 	        _react2.default.createElement("br", null),
+	        "'The LIDA Project'.",
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
 	        "Takes some pictures from time to time."
 	      )
 	    )
@@ -26708,200 +26709,7 @@
 	exports.default = About;
 
 /***/ },
-/* 233 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Theatrical = function (_Component) {
-	  _inherits(Theatrical, _Component);
-	
-	  function Theatrical() {
-	    _classCallCheck(this, Theatrical);
-	
-	    var _this = _possibleConstructorReturn(this, (Theatrical.__proto__ || Object.getPrototypeOf(Theatrical)).call(this));
-	
-	    _this.state = {};
-	    return _this;
-	  }
-	
-	  _createClass(Theatrical, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        null,
-	        _react2.default.createElement(
-	          "div",
-	          { id: "theatrical-title" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "Direction.Performance.Design"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "accordian" },
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "div",
-	                { className: "image_title" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "el simio"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://lida.org/the-hairy-ape/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/el_simio.jpg?raw=true" })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "div",
-	                { className: "image_title" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "add it up"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://lida.org/add-it-up/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/add.jpg?raw=true" })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "div",
-	                { className: "image_title" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "mouse in a jar"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://lida.org/mouse-in-a-jar/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/mouse.jpg?raw=true" })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "div",
-	                { className: "image_title" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "rur/lol"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://lida.org/r-u-r-lol/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rur_lol.jpg?raw=true" })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "div",
-	                { className: "image_title" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "rain/ of terror"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://lida.org/rain-of-terror/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/rain_sunglasses.jpg?raw=true" })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "div",
-	                { className: "image_title" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "http://lida.org/hot-wax-to-being-to-big-to-fail/", target: "_blank" },
-	                  "hot + wax"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "#" },
-	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/hot_wax.jpg?raw=true" })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement(
-	                "div",
-	                { className: "image_title" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "ghostcard"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://ghostcardshow.com/", target: "_blank" },
-	                _react2.default.createElement("img", { src: "https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/ghost_card.jpg?raw=true" })
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Theatrical;
-	}(_react.Component);
-	
-	exports.default = Theatrical;
-
-/***/ },
+/* 233 */,
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
