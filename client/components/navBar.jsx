@@ -5,9 +5,11 @@ const NavBar = () => {
   return (
     <div id="nav-bar">
       <div className="nav-bar__title">
-        <h2>
-          Larry Hernandez
-        </h2>
+        <Link to="contact">
+          <h2>
+              Larry Hernandez
+          </h2>
+        </Link>
       </div>
 
       <ul id="nav-bar-links">

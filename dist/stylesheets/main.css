@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  padding:0;
+  padding: 0;
   background-color: black;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -143,46 +143,57 @@ div#theatrical-title {
   text-align: center;
 }
 
+#web-project-list-wrapper {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.web-project-list__title h1 {
+  color: #fff;
+}
+
 #web-project-list {
   position: relative;
-  left: 12%;
-  margin-top: 5%;
-  width: 85%;
- /* overflow: scroll;*/
-/*  margin-bottom: 10%;
-*/}
-
-.web-project-item {
-  color: white;
-  width: 30em;
-  height: 15em;
-  text-align: center;
-  float: left;
-  margin: 0 0 1% 1%;
-  border: solid 1px white;
+  margin-top: 1%;
+  width: 100%;
 }
 
 .web-project-item-base {
-  /*postion: relative;*/
+  position: relative;
   height: 100%;
+  width: 100%;
   overflow: hidden;
+  margin-bottom: 3%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid white;
 }
 
-.web-project-item-base:hover .web-project-item-details {
-  display: flex;
-  animation: fadein .5s;
+.web-project-item {
+  position: relative;
+}
+
+div.web-project-item-details {
+  /*height: 15em;*/
+  position: absolute;
+  left: 5%;
+  background: rgba(0, 0, 0, .75);
+  width: 30%;
+  margin: 0 0;
+}
+
+.web-project-item__img {
+  display: absolute;
+  color: #fff;
+  width: 60%;
+  height: 95vh;
+  margin-left: 38%;
+  /*margin: 2% 0 5% 1%;*/
 }
 
 .web-project-item a {
   text-decoration: none;
   color: white;
-}
-
-div.web-project-item-details {
-  height: 15em;
-  background: rgba(0, 0, 0, .75);
-  justify-content: center;
-  align-items: center;
 }
 
 .web-project-title {
@@ -203,6 +214,7 @@ div.web-project-item-details {
 /************************/
 @media screen and (max-width: 980px) {
   #nav-bar {
+    width: 150%;
     height: 4em;
     font-size: 200%;
   }
@@ -213,47 +225,36 @@ div.web-project-item-details {
 
   .chalchi {
     top: 0;
+    right: -315px;
     background-size: 300px 300px;
   }
 
+  #header {
+    margin: 0;
+    padding: 0;
+    width: 150%;
+    height: 130vh;
+  }
+
   #hero-text {
+    bottom: -20%;
     font-size: 400%;
   }
 
   #web-project-list-wrapper {
-    position: relative;
-    /*height: 91vh;*/
-    overflow-y: scroll;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10%;
+    width: 150%;
   }
 
-  #web-project-list {
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .web-project-item__img {
+    width: 60%;
+    height: 50vh;
+    margin-left: 20%;
   }
 
-  .web-project-item {
-    width: 100%;
-    font-size: 150%;
+  div.contact {
+    width: 150%;
+    font-size: 300%;
   }
 
-  div#theatrical-title {
-    margin-top: 15%;
-    font-size: 185%;
-  }
-
-  .accordian {
-    margin-top: 30%;
-  }
-
-  #footer {
-    position: fixed;
-    font-size: 165%;
-  }
 }
 
