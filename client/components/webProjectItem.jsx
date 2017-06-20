@@ -16,14 +16,16 @@ const WebProjectItem = ({ name, tech, description, url, imgSrc }) => {
     backgroundRepeat: 'no-repeat',
   };
   return (
-    <div className="web-project-item-base" style={divStyle}>
-        <div className="hidden web-project-item-details">
+    <div className="web-project-item-base">
+      <div className="web-project-item-details">
           <a href={url} target="_blank">
           <h3 className="web-project-title">{name}</h3>
           <p>{description}</p>
           <p>TECH: {tech}</p>
           </a>
-        </div>
+      </div>
+      <div className="web-project-item__img" style={divStyle}>
+      </div>
     </div>
   );
 }

@@ -7,6 +7,13 @@ export default class WebProjectList extends Component {
     this.state = {
       projects: [
         {
+          name: 'PaFuera',
+          description: 'NYC events blog aggregator.',
+          tech: 'React, Postgresql, Node, Cheerio, CSS',
+          url: `https://pafuera.herokuapp.com/`,
+          imgSrc: `https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-12-20%20at%201.56.31%20PM.png?raw=true`,
+        },
+        {
           name: 'Dump the Chump',
           description: 'Users click on body parts and tap keys to provide the parts with ultra-fresh dance moves.',
           tech: 'JavaScript, CSS, HTML',
@@ -14,11 +21,11 @@ export default class WebProjectList extends Component {
           imgSrc: `https://github.com/LosGimenos/dumpthechump/blob/gh-pages/img/screens/Screen%20Shot%202016-09-05%20at%209.26.39%20PM.png?raw=true`,
         },
         {
-          name: 'PaFuera',
-          description: 'NYC events blog aggregator.',
-          tech: 'React, Postgresql, Node, Cheerio, CSS',
-          url: `https://pafuera.herokuapp.com/`,
-          imgSrc: `https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-12-20%20at%201.56.31%20PM.png?raw=true`,
+          name: 'Tell Me Where to Go',
+          description: 'A restaurant-roulette game designed to help find a restaurant.',
+          tech: 'React, Postgresql, Node, CSS, Yelp API',
+          url: `https://tell-me-where-to-go.herokuapp.com/`,
+          imgSrc: `https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-10-18%20at%209.58.26%20PM.png?raw=true`,
         },
         {
           name: 'Lorenzo Sarinana',
@@ -27,13 +34,6 @@ export default class WebProjectList extends Component {
           url: 'http://lorenzosarinana.com',
           imgSrc: 'https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/enzoSite.png?raw=true'
         }
-        // {
-        //   name: 'Tell Me Where to Go',
-        //   description: 'A restaurant-roulette game designed to help find a restaurant.',
-        //   tech: 'React, Postgresql, Node, CSS',
-        //   url: `https://tell-me-where-to-go.herokuapp.com/`,
-        //   imgSrc: `https://github.com/LosGimenos/LosGimenos.github.io/blob/master/images/Screen%20Shot%202016-10-18%20at%209.58.26%20PM.png?raw=true`,
-        // },
         // {
         //   name: 'Flea',
         //   description: 'Single-page listing app built with React.',
@@ -67,6 +67,10 @@ export default class WebProjectList extends Component {
     })
     return (
       <div id="web-project-list-wrapper">
+        <div className="web-project-list__title">
+          <h1>Portfolio</h1>
+        </div>
+        <hr />
         <div id="web-project-list">
           {webProjects}
         </div>

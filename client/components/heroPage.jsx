@@ -4,7 +4,15 @@ const HeroPage = () => {
   return (
     <div id="header">
       <div id="hero-text">
-        <p>Hey! I'm Larry! I do things!</p>
+        <div className="left-float hero-text__maker">
+          <p>Maker. </p>
+        </div>
+        <div className="left-float hero-text__collaborator">
+          <p>Collaborator. </p>
+        </div>
+        <div className="left-float hero-text__devisor">
+          <p>Devisor. </p>
+        </div>
       </div>
     </div>
   );
