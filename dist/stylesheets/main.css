@@ -254,7 +254,7 @@ div.web-project-item-details {
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 400px) {
 
   h1, h2, h3 {
     font-family: sans-serif;
