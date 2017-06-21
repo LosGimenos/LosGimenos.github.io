@@ -252,7 +252,7 @@ div.web-project-item-details {
   }
 }
 
-@media only screen
+/*@media only screen
 and (min-width: 1300px)
 and (max-width: 1400px) {
   h1, h2, h3 {
@@ -302,4 +302,4 @@ and (max-width: 1400px) {
     font-size: 375%;
     height: 100vh;
   }
-}
+}*/
