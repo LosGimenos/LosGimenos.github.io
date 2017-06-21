@@ -279,7 +279,7 @@ and (max-width: 1500px) {
     margin: 0;
     padding: 0;
     width: 105%;
-    height: 90vh;
+    height: 92vh;
   }
 
   #hero-text {
@@ -299,7 +299,7 @@ and (max-width: 1500px) {
 
   div.contact {
     width: 105%;
-    font-size: 400%;
+    font-size: 375%;
     height: 100vh;
   }
 }
