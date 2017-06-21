@@ -271,7 +271,7 @@ and (max-width: 1500px) {
 
   .chalchi {
     top: 0;
-    right: -80px;
+    right: 150px;
     background-size: 300px 300px;
   }
 
