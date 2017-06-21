@@ -202,7 +202,7 @@ div.web-project-item-details {
 /************************/
 /*MEDIA QUERY TIME!!*/
 /************************/
-@media only screen (max-width: 980px) {
+@media (max-width: 980px) {
 
   h1, h2, h3 {
     font-family: sans-serif;
