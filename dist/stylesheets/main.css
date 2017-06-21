@@ -3,9 +3,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  /*box-sizing: border-box;
+  overflow-x: hidden;*/
   font-family: 'Raleway', sans-serif;
+}
+
+frame {
+  width: device-width;
 }
 
 h2, h3 {
