@@ -253,7 +253,7 @@ div.web-project-item-details {
 }
 
 @media only screen
-and (min-width: 1000px)
+and (min-width: 1400px)
 and (max-width: 1500px) {
   h1, h2, h3 {
     font-family: sans-serif;
