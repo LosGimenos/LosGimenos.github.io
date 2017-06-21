@@ -254,13 +254,13 @@ div.web-project-item-details {
 
 @media only screen
 and (min-width: 1000px)
-and (max-width: 2000px) {
+and (max-width: 1500px) {
   h1, h2, h3 {
     font-family: sans-serif;
   }
 
   #nav-bar {
-    width: 131%;
+    width: 105%;
     height: 4em;
     font-size: 200%;
   }
@@ -271,19 +271,19 @@ and (max-width: 2000px) {
 
   .chalchi {
     top: 0;
-    right: -315px;
+    right: -80px;
     background-size: 300px 300px;
   }
 
   #header {
     margin: 0;
     padding: 0;
-    width: 131%;
-    height: 100vh;
+    width: 105%;
+    height: 90vh;
   }
 
   #hero-text {
-    bottom: -20%;
+    bottom: 1%;
     font-size: 400%;
   }
 
@@ -298,8 +298,8 @@ and (max-width: 2000px) {
   }
 
   div.contact {
-    width: 131%;
-    font-size: 300%;
+    width: 105%;
+    font-size: 400%;
     height: 100vh;
   }
 }
