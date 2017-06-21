@@ -57,7 +57,7 @@ h2, h3 {
 
 .chalchi {
     position: absolute;
-    background: url("http://canamay-te.de/site/wp-content/uploads/thirteen.png");
+    background: url("https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/maht.png?raw=true");
     background-size: 100px 100px;
     background-repeat: no-repeat;
     background-position: center;
@@ -212,7 +212,7 @@ div.web-project-item-details {
   }
 
   #nav-bar {
-    width: 131%;
+    max-width: 100%;
     height: 4em;
     font-size: 200%;
   }
