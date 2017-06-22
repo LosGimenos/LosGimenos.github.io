@@ -1,0 +1,47 @@
+@media only screen and (max-width: 980px) {
+  h1, h2, h3 {
+    font-family: sans-serif;
+  }
+
+  #nav-bar {
+    height: 4em;
+    font-size: 200%;
+  }
+
+  .nav-bar__title {
+    top: 0;
+  }
+
+  #nav-bar-links {
+    display: none;
+  }
+
+  .chalchi {
+    top: 0;
+    background-size: 300px 300px;
+  }
+
+  #header {
+    height: 100vh;
+  }
+
+  #hero-text {
+    width: 90%;
+    bottom: -5%;
+    font-size: 375%;
+  }
+
+  #web-project-list-wrapper {
+    width: 150%;
+  }
+
+  .web-project-item__img {
+    width: 60%;
+    height: 50vh;
+    margin-left: 20%;
+  }
+
+  div.contact {
+    font-size: 300%;
+  }
+}

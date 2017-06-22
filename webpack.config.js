@@ -1,7 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-module.exports = {
+const config = {
   devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -10,22 +11,22 @@ module.exports = {
   },
   entry: path.join(__dirname, 'client', 'index.jsx'),
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '/js/bundle.js',
+    path: path.join(__dirname, 'dist', 'js'),
+    filename: 'bundle.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
+        options: {
           presets: ['es2015', 'react'],
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        test: /\.scss$/,
+        loader: ['style-loader', 'css-loader', 'sass-loader']
       }
     ],
   },
@@ -42,3 +43,5 @@ module.exports = {
     )
   ]
 };
+
+module.exports = config;
