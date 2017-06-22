@@ -36,6 +36,10 @@ const NavBar = () => {
       </ul>
       <Link to="/">
         <div className="chalchi">
+          <div className="chalchi__dropdown">
+            <div className="chalchi__dropdown-option">
+            </div>
+          </div>
         </div>
       </Link>
     </div>
