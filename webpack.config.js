@@ -10,22 +10,22 @@ module.exports = {
   },
   entry: path.join(__dirname, 'client', 'index.jsx'),
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '/js/bundle.js',
+    path: path.join(__dirname, 'dist', 'js'),
+    filename: 'bundle.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
+        options: {
           presets: ['es2015', 'react'],
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        test: /\.scss$/,
+        loader: ['style-loader', 'css-loader', 'sass-loader']
       }
     ],
   },

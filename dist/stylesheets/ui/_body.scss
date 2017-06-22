@@ -1,0 +1,22 @@
+body {
+  background-color: $black;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2, h3 {
+  color: $white;
+  text-decoration: underline;
+}
+
+.left-float {
+  float: left;
+  margin-left: 1%;
+}
+
+div.shrink {
+    font-size: 90%;
+}
+
+.hidden {
+  display: none;
+}

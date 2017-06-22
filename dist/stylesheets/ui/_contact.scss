@@ -1,0 +1,13 @@
+div.contact {
+  text-align: center;
+  color: $white;
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+div.contact a:hover {
+  text-decoration: underline;
+}
