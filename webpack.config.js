@@ -1,7 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-module.exports = {
+const config = {
   devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -42,3 +43,5 @@ module.exports = {
     )
   ]
 };
+
+module.exports = config;

@@ -4,9 +4,13 @@
   }
 
   #nav-bar {
-    max-width: 100%;
+    // max-width: 100%;
     height: 4em;
     font-size: 200%;
+  }
+
+  .nav-bar__title {
+    top: 0;
   }
 
   #nav-bar-links {
@@ -15,20 +19,20 @@
 
   .chalchi {
     top: 0;
-    right: -315px;
+    // right: -315px;
     background-size: 300px 300px;
   }
 
   #header {
-    margin: 0;
-    padding: 0;
-    width: 131%;
+    // margin: 0;
+    // padding: 0;
     height: 100vh;
   }
 
   #hero-text {
-    bottom: -20%;
-    font-size: 400%;
+    width: 90%;
+    bottom: -5%;
+    font-size: 375%;
   }
 
   #web-project-list-wrapper {
@@ -42,8 +46,8 @@
   }
 
   div.contact {
-    width: 131%;
+    // width: 131%;
     font-size: 300%;
-    height: 100vh;
+    // height: 100vh;
   }
 }

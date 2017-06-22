@@ -3,11 +3,21 @@
   background-color: $white;
   height: 3em;
   padding-top: 1%;
+
+  a {
+    text-decoration: none;
+    color: dimgray;
+  }
+}
+
+#nav-bar a:hover {
+    text-decoration: underline;
+    text-decoration-color: $black;
 }
 
 .nav-bar__title {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 2%;
   width: 75%;
 }
 
@@ -48,14 +58,4 @@
   font-size: 150%;
   margin-left: 3%;
   margin-top: .5%;
-}
-
-#nav-bar a {
-  text-decoration: none;
-  color: dimgray;
-}
-
-#nav-bar a:hover {
-    text-decoration: underline;
-    text-decoration-color: $black;
 }
