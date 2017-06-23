@@ -21,6 +21,7 @@
     background-color: $white;
     width: 30%;
     text-align: center;
+    z-index: 1;
 
     li {
       float: none;
@@ -43,12 +44,17 @@
     font-size: 375%;
   }
 
-  #web-project-list-wrapper {
-    width: 150%;
+  .web-project-list__title {
+    font-size: 300%;
+  }
+
+  .web-project-item-details {
+    font-size: 175%;
+    width: 50%;
   }
 
   .web-project-item__img {
-    width: 60%;
+    width: 80%;
     height: 50vh;
     margin-left: 20%;
   }
