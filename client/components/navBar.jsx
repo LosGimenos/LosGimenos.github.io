@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const clickHandler = function() {
-  let element = document.querySelector('#nav-bar-links');
-  element.style.display = element.style.display === 'block' ? 'none' : 'block';
+  if (document.body.clientWidth <= 980) {
+    let element = document.querySelector('#nav-bar-links');
+    element.style.display = element.style.display === 'block' ? 'none' : 'block';
+  }
 }
 
 const NavBar = () => {

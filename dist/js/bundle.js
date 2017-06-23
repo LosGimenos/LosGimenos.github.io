@@ -14225,8 +14225,10 @@ var _reactRouter = __webpack_require__(70);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var clickHandler = function clickHandler() {
-  var element = document.querySelector('#nav-bar-links');
-  element.style.display = element.style.display === 'block' ? 'none' : 'block';
+  if (document.body.clientWidth <= 980) {
+    var element = document.querySelector('#nav-bar-links');
+    element.style.display = element.style.display === 'block' ? 'none' : 'block';
+  }
 };
 
 var NavBar = function NavBar() {
