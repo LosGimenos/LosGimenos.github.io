@@ -1,11 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+const clickHandler = function() {
+  if (document.body.clientWidth <= 980) {
+    let element = document.querySelector('#nav-bar-links');
+    element.style.display = element.style.display === 'block' ? 'none' : 'block';
+  }
+}
+
 const NavBar = () => {
   return (
     <div id="nav-bar">
       <div className="nav-bar__title">
-        <Link to="contact">
+        <Link to="/">
           <h2>
               Larry Hernandez
           </h2>
@@ -34,10 +41,10 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
-      <Link to="/">
-        <div className="chalchi">
-        </div>
-      </Link>
+
+      <div className="chalchi" onClick={clickHandler}>
+      </div>
+
     </div>
   );
 }

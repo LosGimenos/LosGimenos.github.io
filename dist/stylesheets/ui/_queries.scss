@@ -14,6 +14,19 @@
 
   #nav-bar-links {
     display: none;
+    position: absolute;
+    left: calc(100% - 31.5%);
+    top: 10%;
+    color: $black;
+    background-color: $white;
+    width: 30%;
+    text-align: center;
+    z-index: 1;
+
+    li {
+      float: none;
+      border-bottom: 1px solid $black;
+    }
   }
 
   .chalchi {
@@ -27,21 +40,27 @@
 
   #hero-text {
     width: 90%;
-    bottom: -5%;
+    bottom: -8%;
     font-size: 375%;
   }
 
-  #web-project-list-wrapper {
-    width: 150%;
+  .web-project-list__title {
+    font-size: 300%;
+  }
+
+  .web-project-item-details {
+    font-size: 175%;
+    width: 50%;
   }
 
   .web-project-item__img {
-    width: 60%;
+    width: 80%;
     height: 50vh;
     margin-left: 20%;
   }
 
-  div.contact {
+  div.contact,
+  div.about {
     font-size: 300%;
   }
 }
