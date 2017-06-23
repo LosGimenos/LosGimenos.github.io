@@ -14225,7 +14225,7 @@ var _reactRouter = __webpack_require__(70);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var clickHandler = function clickHandler() {
-  var element = document.querySelector('.chalchi__dropdown-option');
+  var element = document.querySelector('#nav-bar-links');
   element.style.display = element.style.display === 'block' ? 'none' : 'block';
 };
 
@@ -14238,7 +14238,7 @@ var NavBar = function NavBar() {
       { className: 'nav-bar__title' },
       _react2.default.createElement(
         _reactRouter.Link,
-        { to: 'contact' },
+        { to: '/' },
         _react2.default.createElement(
           'h2',
           null,
@@ -14302,27 +14302,7 @@ var NavBar = function NavBar() {
         )
       )
     ),
-    _react2.default.createElement(
-      'div',
-      { className: 'chalchi', onClick: clickHandler },
-      _react2.default.createElement(
-        'div',
-        { className: 'chalchi__dropdown' },
-        _react2.default.createElement(
-          'div',
-          { className: 'chalchi__dropdown-option' },
-          _react2.default.createElement(
-            _reactRouter.Link,
-            { to: 'contact' },
-            _react2.default.createElement(
-              'p',
-              null,
-              'Contact'
-            )
-          )
-        )
-      )
-    )
+    _react2.default.createElement('div', { className: 'chalchi', onClick: clickHandler })
   );
 };
 
@@ -14655,7 +14635,7 @@ exports = module.exports = __webpack_require__(130)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #000;\n  font-family: 'Raleway', sans-serif; }\n\nh2, h3 {\n  color: #fff;\n  text-decoration: underline; }\n\n.left-float {\n  float: left;\n  margin-left: 1%; }\n\ndiv.shrink {\n  font-size: 90%; }\n\n.hidden {\n  display: none; }\n\n#nav-bar {\n  top: 0;\n  background-color: #fff;\n  height: 3em;\n  padding-top: 1%; }\n  #nav-bar a {\n    text-decoration: none;\n    color: dimgray; }\n\n#nav-bar a:hover {\n  text-decoration: underline;\n  text-decoration-color: #000; }\n\n.nav-bar__title {\n  position: absolute;\n  top: 2%;\n  width: 75%; }\n\n.nav-bar__title h2 {\n  position: absolute;\n  top: -30px;\n  left: 2%;\n  color: #000;\n  text-decoration: none;\n  font-size: 225%; }\n\n.chalchi {\n  position: absolute;\n  background: url(\"https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/maht.png?raw=true\");\n  background-size: 100px 100px;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 10em;\n  height: 4em;\n  text-align: center;\n  top: 0;\n  right: 0; }\n\n.chalchi__dropdown {\n  position: absolute;\n  color: #000;\n  width: 100%;\n  height: 100%;\n  top: 100%; }\n\n.chalchi__dropdown-option {\n  display: none;\n  text-align: center;\n  background-color: #fff;\n  border: 1px solid #000; }\n\n#nav-bar-links {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  top: -.2em;\n  left: 350px;\n  list-style: none;\n  width: 50%; }\n  #nav-bar-links li {\n    float: left;\n    font-size: 150%;\n    margin-left: 3%;\n    margin-top: .5%; }\n\n#header {\n  margin: 0;\n  padding: 0;\n  height: 91vh;\n  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/196596_1873965459094_10812_n.jpg?oh=76b7597867e72f81c618319937596d7d&oe=59DB3529\");\n  background-position: center;\n  background-size: cover; }\n\n#hero-text {\n  position: absolute;\n  color: #fff;\n  width: 20em;\n  font-size: 300%;\n  left: 3%;\n  bottom: 2%;\n  display: inline; }\n\ndiv.contact {\n  text-align: center;\n  color: #fff; }\n  div.contact a {\n    text-decoration: none;\n    color: #fff; }\n\ndiv.contact a:hover {\n  text-decoration: underline; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\ndiv.about {\n  text-align: center;\n  color: #fff; }\n\n#web-project-list-wrapper {\n  text-align: center;\n  width: 100%;\n  position: relative; }\n\n.web-project-list__title h1 {\n  color: #fff; }\n\n#web-project-list {\n  position: relative;\n  margin-top: 1%;\n  width: 100%; }\n\n.web-project-item-base {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  overflow: hidden;\n  margin-bottom: 3%;\n  padding-bottom: 1%;\n  border-bottom: 1px solid #fff; }\n\n.web-project-item {\n  position: relative; }\n\ndiv.web-project-item-details {\n  position: absolute;\n  left: 5%;\n  background: rgba(0, 0, 0, 0.75);\n  width: 30%;\n  margin: 0 0; }\n\n.web-project-item__img {\n  display: absolute;\n  color: #fff;\n  width: 60%;\n  height: 95vh;\n  margin-left: 38%; }\n\n.web-project-item a {\n  text-decoration: none;\n  color: #fff; }\n\n.web-project-title {\n  font-size: 300%; }\n\n@media only screen and (max-width: 980px) {\n  h1, h2, h3 {\n    font-family: sans-serif; }\n  #nav-bar {\n    height: 4em;\n    font-size: 200%; }\n  .nav-bar__title {\n    top: 0; }\n  #nav-bar-links {\n    display: none; }\n  .chalchi {\n    top: 0;\n    background-size: 300px 300px; }\n  #header {\n    height: 100vh; }\n  #hero-text {\n    width: 90%;\n    bottom: -5%;\n    font-size: 375%; }\n  #web-project-list-wrapper {\n    width: 150%; }\n  .web-project-item__img {\n    width: 60%;\n    height: 50vh;\n    margin-left: 20%; }\n  div.contact {\n    font-size: 300%; } }\n", ""]);
+exports.push([module.i, "body {\n  background-color: #000;\n  font-family: 'Raleway', sans-serif; }\n\nh2, h3 {\n  color: #fff;\n  text-decoration: underline; }\n\n.left-float {\n  float: left;\n  margin-left: 1%; }\n\ndiv.shrink {\n  font-size: 90%; }\n\n.hidden {\n  display: none; }\n\n#nav-bar {\n  top: 0;\n  background-color: #fff;\n  height: 3em;\n  padding-top: 1%; }\n  #nav-bar a {\n    text-decoration: none;\n    color: dimgray; }\n\n#nav-bar a:hover {\n  text-decoration: underline;\n  text-decoration-color: #000; }\n\n.nav-bar__title {\n  position: absolute;\n  top: 2%;\n  width: 75%; }\n\n.nav-bar__title h2 {\n  position: absolute;\n  top: -30px;\n  left: 2%;\n  color: #000;\n  text-decoration: none;\n  font-size: 225%; }\n\n.chalchi {\n  position: absolute;\n  background: url(\"https://github.com/LosGimenos/enzoSite/blob/gh-pages/img/maht.png?raw=true\");\n  background-size: 100px 100px;\n  background-repeat: no-repeat;\n  background-position: center;\n  width: 10em;\n  height: 4em;\n  text-align: center;\n  top: 0;\n  right: 0; }\n\n.chalchi__dropdown {\n  position: absolute;\n  color: #000;\n  width: 100%;\n  height: 100%;\n  top: 100%; }\n\n.chalchi__dropdown-option {\n  display: none;\n  text-align: center;\n  background-color: #fff;\n  border: 1px solid #000; }\n\n#nav-bar-links {\n  position: absolute;\n  margin: 0;\n  padding: 0;\n  top: -.2em;\n  left: 350px;\n  list-style: none;\n  width: 50%; }\n  #nav-bar-links li {\n    float: left;\n    font-size: 150%;\n    margin-left: 3%;\n    margin-top: .5%; }\n\n#header {\n  margin: 0;\n  padding: 0;\n  height: 91vh;\n  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\"https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/196596_1873965459094_10812_n.jpg?oh=76b7597867e72f81c618319937596d7d&oe=59DB3529\");\n  background-position: center;\n  background-size: cover; }\n\n#hero-text {\n  position: absolute;\n  color: #fff;\n  width: 20em;\n  font-size: 300%;\n  left: 3%;\n  bottom: 2%;\n  display: inline; }\n\ndiv.contact {\n  text-align: center;\n  color: #fff; }\n  div.contact a {\n    text-decoration: none;\n    color: #fff; }\n\ndiv.contact a:hover {\n  text-decoration: underline; }\n\n@keyframes fadein {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\ndiv.about {\n  text-align: center;\n  color: #fff; }\n\n#web-project-list-wrapper {\n  text-align: center;\n  width: 100%;\n  position: relative; }\n\n.web-project-list__title h1 {\n  color: #fff; }\n\n#web-project-list {\n  position: relative;\n  margin-top: 1%;\n  width: 100%; }\n\n.web-project-item-base {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  overflow: hidden;\n  margin-bottom: 3%;\n  padding-bottom: 1%;\n  border-bottom: 1px solid #fff; }\n\n.web-project-item {\n  position: relative; }\n\ndiv.web-project-item-details {\n  position: absolute;\n  left: 5%;\n  background: rgba(0, 0, 0, 0.75);\n  width: 30%;\n  margin: 0 0; }\n\n.web-project-item__img {\n  display: absolute;\n  color: #fff;\n  width: 60%;\n  height: 95vh;\n  margin-left: 38%; }\n\n.web-project-item a {\n  text-decoration: none;\n  color: #fff; }\n\n.web-project-title {\n  font-size: 300%; }\n\n@media only screen and (max-width: 980px) {\n  h1, h2, h3 {\n    font-family: sans-serif; }\n  #nav-bar {\n    height: 4em;\n    font-size: 200%; }\n  .nav-bar__title {\n    top: 0; }\n  #nav-bar-links {\n    display: none;\n    position: absolute;\n    left: calc(100% - 31.5%);\n    top: 10%;\n    color: #000;\n    background-color: #fff;\n    width: 30%;\n    text-align: center; }\n    #nav-bar-links li {\n      float: none;\n      border-bottom: 1px solid #000; }\n  .chalchi {\n    top: 0;\n    background-size: 300px 300px; }\n  #header {\n    height: 100vh; }\n  #hero-text {\n    width: 90%;\n    bottom: -5%;\n    font-size: 375%; }\n  #web-project-list-wrapper {\n    width: 150%; }\n  .web-project-item__img {\n    width: 60%;\n    height: 50vh;\n    margin-left: 20%; }\n  div.contact,\n  div.about {\n    font-size: 300%; } }\n", ""]);
 
 // exports
 
