@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+const clickHandler = function() {
+  let element = document.querySelector('.chalchi__dropdown-option');
+  element.style.display = element.style.display === 'block' ? 'none' : 'block';
+}
+
 const NavBar = () => {
   return (
     <div id="nav-bar">
@@ -34,14 +39,15 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
-      <Link to="/">
-        <div className="chalchi">
+        <div className="chalchi" onClick={clickHandler}>
           <div className="chalchi__dropdown">
             <div className="chalchi__dropdown-option">
+              <Link to='contact'>
+                <p>Contact</p>
+              </Link>
             </div>
           </div>
         </div>
-      </Link>
     </div>
   );
 }
