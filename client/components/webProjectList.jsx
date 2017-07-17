@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import * as ScrollMagic from 'scrollmagic';
 import WebProjectItem from './webProjectItem.jsx';
 
 export default class WebProjectList extends Component {
@@ -51,6 +52,22 @@ export default class WebProjectList extends Component {
       ],
     };
   }
+
+  componentDidMount() {
+    const controller = new ScrollMagic.Controller();
+
+    document.querySelectorAll('.web-project-item').forEach((item, index) => {
+      const imgIndex =
+        document.querySelectorAll('.web-project-item__img')[index];
+      const projectItemScene = new ScrollMagic.Scene({
+        triggerElement: item,
+        reverse: false,
+      })
+        .setClassToggle(imgIndex, 'swipe')
+        .addTo(controller);
+    });
+  }
+
   render() {
     const webProjects = this.state.projects.map((project) => {
       return (
