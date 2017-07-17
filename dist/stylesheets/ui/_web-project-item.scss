@@ -10,6 +10,14 @@
 
 .web-project-item {
   position: relative;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease-out;
+}
+
+.swipe {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .web-project-item-details {
