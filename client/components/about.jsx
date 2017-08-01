@@ -11,7 +11,8 @@ const About = () => {
           <p>
             Lifelong tech hobbyist.
             Full Stack web developer using <br />
-            SASS, GSAP, Node, React, Rails, Webpack, PostgreSQL. <br />
+            React / Angular / Vue with Webpack, PostgreSQL, <br />
+            SASS, GSAP, Node, and Rails.
             Dabbles in Python, Pandas, PHP, D3, Neo4j, Flask. <br />
             Other software proficiences include: <br />
             Final Cut Pro, Protools, Photoshop, Illustrator,
